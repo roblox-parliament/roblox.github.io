@@ -170,40 +170,8 @@ p a:hover {
       return i;
     }
     </script>
-<!-- <audio id="myAudio1">
-  <source src="mixkit-arcade-game-jump-coin-216.wav" type="audio/ogg">
-</audio> -->
-<script>
-  var x = document.getElementById("myAudio1"); 
-  
-  function playAudio1() { 
-    x.play(); 
-  } 
-  </script>
+
 <!-- script -->
-
-<script>
-
-</script>
-
-<script>
-  var menuBtn = document.getElementById("menuBtn")
-  var sideNav = document.getElementById("sideNav")
-  var menu = document.getElementById("menu")
-
-  sideNav.style.right == "-250px";
-
-  menuBtn.onclick = function(){
-    if(sideNav.style.right == "-250px"){
-      sideNav.style.right = "0";
-      menu.src = "https://i.ibb.co/9cC0MXD/x-menu.png";
-    }
-    else{
-      sideNav.style.right = "-250px";
-      menu.src = "https://i.ibb.co/rs8wZpF/btn.png";
-    }
-  }
-</script>
 
 <script>
     window.addEventListener("load", () => {
@@ -289,37 +257,3 @@ p a:hover {
           }
     
     </style>
-<style>
-    
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
-}
-</style>
-<script>
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", reveal);
-
-</script>
