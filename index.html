@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--   <meta http-equiv="refresh" content="10"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comp.css">
+    <link rel="stylesheet" href="num.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Charm:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://i.ibb.co/tXf8wCs/image-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>FTP - Home</title>
+</head>
+<!-- <body  onclick="playAudio1()"> -->
+<body>
+    <style>
+@keyframes grow-progress {
+  from { transform: scaleX(0); background: linear-gradient(300deg,  blue, indigo, violet);}
+  to { transform: scaleX(1); background: linear-gradient(300deg, red, orange, yellow, green, blue, indigo, violet);}
+}
+
+#progress {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%; 
+    height: .5em;
+    border-radius: 10px;
+  display: none;
+  z-index: 100;
+  transform-origin: 0 50%;
+  animation: grow-progress auto linear;
+  animation-timeline: scroll();
+}
+        .scroller {
+  scroll-timeline-name: --my-scroller;
+  scroll-timeline-axis: inline;
+}
+
+.scroller .subject {
+  animation: animate-it linear;
+  animation-timeline: --my-scroller;
+}
+
+p a {
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+      
+    ),
+    linear-gradient(
+      to right,
+      rgba(250, 0, 0, 1),
+      rgba(250, 0, 0, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+p a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+    </style>
+    <div id="progress"></div>
+    <div class="MuiBox-root css-1ltj605 loader" id=""><span class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-z01bqi" role="progressbar" style="width: 100px; height: 100px;"><svg class="MuiCircularProgress-svg css-13o7eu2" viewBox="22 22 44 44"><circle class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-14891ef" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle></svg></span></div>
+  <section id="banner">
+    <a href="#">
+      <img class="logo" src="https://i.ibb.co/608kmPw/30361-A74-069-D-45-A8-8273-B1-A65-CE372-EE-removebg-preview.png" alt="logo" >
+    </a>
+    <div class="banner-text">
+      <h1 style="font-family: 'Anuphan', sans-serif; font-weight: 700;">พรรคเพื่อสร้างอนาคตไทย</h1>
+      <p class="a" style="font-family: 'Anuphan', sans-serif;font-weight: 600;"><a>ร่วมสร้างอนาคต เพื่อไทย ทุกคน</a></p>
+      <div class="banner-btn">
+        <a href="#member" ><span></span>กรรมการบริหาร</a>
+        <a href="#footer"><span></span>ติดต่อ</a>
+        <a href="policy.html"><span></span>นโยบาย</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="sideNav">
+    <nav>
+      <ul>
+        <li><a href="#">หน้าหลัก</a></li>
+        <li><a href="policy.html">นโยบาย</a></li>
+        <li><a href="#member" >กรรมการบริหาร</a></li>
+        <li><a href="elec.html">การเลือกตั้ง</a></li>
+        <li><a href="#">ค้นหา</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="menuBtn">
+    <img src="https://i.ibb.co/rs8wZpF/btn.png" id="menu">
+  </div>
+
+<section id="wow" style="margin-bottom: 40px;">
+    <div class="user-count-content">
+          <div class="d-flex">
+            <div class="col">
+              <div class="user-count">
+                <h1>17 +</h1>
+                <h2>MEMBERS</h2>
+              </div>
+            </div>
+            <div class="col">
+              <div class="logos-container">
+                <div class="logos-slide">
+                  <p>ความเชื่อมั่น</p>
+                  <p>ความมั่นคง</p>
+                  <p>ความอิสระ</p>
+                  <p>ความจริงใจ</p>
+                  <p>ความน่าเชื่อถือ</p>
+                  <p>รักชาติ รักแผ่นดิน</p>
+                  <p>พร้อมเปลี่ยนแปลง</p>
+                  <p>เพื่อสร้างอนาคตไทยคือ<u>ความหวัง</u></p>
+                  <p>สมาชิกพรรค</p>
+                  <p>LOVE_13429</p>
+                  <p>Info_PS</p>
+                  <p>ChibaKung001</p>
+                  <p>TANKUNJRNO</p>
+                  <p>ffggkjbkl</p>
+                  <p>POTH3321</p>
+                  <p>te_teeth</p>
+                  <p>Worapon_PE7</p>
+                  <p>WeirTeerapatStudio</p>
+                  <p>likesthai350</p>
+                  <p>autoto4254</p>
+                  <p>pang254947</p>
+                  <p>Jira_rak999</p>
+                  <p>p_kaem</p>
+                  <p>F1IXEL5800</p>
+                  <p>tomatomameee1234</p>
+                </div>
+                <div class="logos-slide">
+                  <p>ความเชื่อมั่น</p>
+                  <p>ความมั่นคง</p>
+                  <p>ความอิสระ</p>
+                  <p>ความจริงใจ</p>
+                  <p>ความน่าเชื่อถือ</p>
+                  <p>รักชาติ รักแผ่นดิน</p>
+                  <p>พร้อมเปลี่ยนแปลง</p>
+                  <p>เพื่อสร้างอนาคตไทยคือ<u>ความหวัง</u></p>
+                  <p>สมาชิกพรรค</p>
+                  <p>LOVE_13429</p>
+                  <p>Info_PS</p>
+                  <p>ChibaKung001</p>
+                  <p>TANKUNJRNO</p>
+                  <p>ffggkjbkl</p>
+                  <p>POTH3321</p>
+                  <p>te_teeth</p>
+                  <p>Worapon_PE7</p>
+                  <p>WeirTeerapatStudio</p>
+                  <p>likesthai350</p>
+                  <p>autoto4254</p>
+                  <p>pang254947</p>
+                  <p>Jira_rak999</p>
+                  <p>p_kaem</p>
+                  <p>F1IXEL5800</p>
+                  <p>tomatomameee1234</p>
+                </div>
+
+            </div>
+            
+            </div>
+          </div>
+        </div>
+</section>
+    
+  <!--Fratures-->
+
+  <section id="feature " class="">
+    <div class="title-text reveal">
+      <p style="font-family: 'Anuphan', sans-serif; color: #ED0700 ;">เพื่อสร้างอนาคตไทยคือ<u style="color: #FF914D ;">ความหวัง</u></p>
+      <h1 style="font-family: 'Anuphan', sans-serif;">เปลี่ยนความฝันเป็น<u style="color: var(--rd);">ความจริง</u></h1>
+    </div>
+    <div class="feature-box">
+      <div class="features">
+        <h1 class="reveal" style="font-family: 'Anuphan', sans-serif; color: #ED0700;"><b>วิสัยทัศน์พรรค</b></h1>
+        <div class="features-desc reveal" >
+          <div class="features-icon">
+            <i class="fa fa-shield"></i>
+          </div>
+          <div class="features-text">
+            <p style="font-family: 'Anuphan', sans-serif; color: #000; font-size: 22px;"><small>ความเชื่อมั่น ความมั่นคง ความอิสระ ความจริงใจ ความน่าเชื่อถือ เป็น </small><b><u style="cursor: pointer; color: var(--rd)">หัวใจของพรรค</u></b></p>
+          </div>
+        </div>
+        <h1 class="reveal" style="font-family: 'Anuphan', sans-serif; color: #ED0700;"><b>อุดมการณ์</b></h1>
+        <div class="features-desc reveal">
+          <div class="features-icon">
+            <i class="fa fa-check-square"></i>
+          </div>
+          <div class="features-text">
+            <p style="font-family: 'Anuphan', sans-serif; color: #000; font-size: 22px;">รักชาติ รักแผ่นดิน พร้อมเปลี่ยนแปลง</p>
+          </div>
+        </div>
+        <h1 class="reveal" style="font-family: 'Anuphan', sans-serif; color: #ED0700;"><b>ประชาธิปไตยเต็มใบ</b></h1>
+        <div class="features-desc reveal">
+          <div class="features-icon">
+            <i class="fa fa-check-to-slot"></i>
+          </div>
+          <div class="features-text">
+            <p style="font-family: 'Anuphan', sans-serif; color: #000; font-size: 22px;"><b>ประชาธิปไตย</b> เป็นตัวขับเคลื่อนประเทศที่สำคัญ</p>
+          </div>
+        </div>
+      </div>
+      <div class="features-img reveal">
+        <img src="https://i.ibb.co/tXf8wCs/image-removebg-preview.png" alt="">
+      </div>
+    </div>
+  </section>
+
+<!-- สมัครงาน -->
+
+  <section id="member" style="height: auto;" class="">
+    <div class="title-text reveal">
+      <p style="font-family: 'Anuphan', sans-serif; color: #ED0700 ;">รวม<b  style="color: #ff6f00 ;">พลังประชาชน</b></p>
+      <h1 style="font-family: 'Anuphan', sans-serif;">สร้างพรรคของ<u style="color: var(--rd);">ประชาชน</u></h1>
+    </div>
+    <div class="feature-box">
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/hsBb4tz/IMG-7853.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>LOVE_13429</h4> 
+                <p><b>หัวหน้าพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card none">
+              <img src="https://i.ibb.co/KzLrK41/Info-PS.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>Info_PS</h4> 
+                <p><b>เลขาธิการพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card none">
+              <img src="https://i.ibb.co/VVf8pdF/Chiba-Kung001.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>ChibaKung001</h4> 
+                <p><b>ที่ปรึกษาพรรค</b></p>
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card none">
+              <img src="https://i.ibb.co/HYg8DrL/TANKUNJRNO1.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>TANKUNJRNO</h4> 
+                <p><b>นายทะเบียน</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/t4NWPzY/ffggkjbkl.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>ffggkjbkl</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/QJJHGVV/POTH3321.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>POTH3321</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/tXf8wCs/image-removebg-preview.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>te_teeth</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/tXf8wCs/image-removebg-preview.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>Worapon_PE7</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/tXf8wCs/image-removebg-preview.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>WeirTeerapatStudio</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/vsbCx9q/patcharadanai.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>likesthai350</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card none">
+              <img src="https://i.ibb.co/5chZdps/autoto4254.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>autoto4254</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/8PsdcRg/pang254927.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>pang254947</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/tXf8wCs/image-removebg-preview.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>Jira_rak999 </h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/tXf8wCs/image-removebg-preview.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>p_kaem</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/tXf8wCs/image-removebg-preview.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>F1IXEL5800</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+        <div class="feature reveal">
+            <div class="card">
+              <img src="https://i.ibb.co/mSPqVPZ/tomatomameee1234.webp" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4>tomatomameee1234</h4> 
+                <p><b>สมาชิกพรรค</b></p> 
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+<!-- สมัครงาน -->
+
+<section id="policy" style="height: auto; display: none;"  class="reveal">
+    <div class="title-text">
+      <p style="font-family: 'Anuphan', sans-serif; color: #ED0700 ;">รวม<b  style="color: #ff6f00 ;">นโยบาย</b></p>
+      <h1 style="font-family: 'Anuphan', sans-serif;">เพื่อ<u style="color: var(--rd);">ประชาชน</u></h1>
+      <div style="margin: auto;">
+        <div class="grid-containers">
+          <div class="containers">
+            <img class="policy w3-animate-zoom" src="https://i.ibb.co/p3Qn5QY/1.png" alt="ด้านสังคม">
+            <h1 class="w3-animate-opacity"><b>ด้านสังคม</b></h1>
+            <h6 class="h7">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </h6>
+          </div>
+          <div class="containers">
+            <img  class="policy w3-animate-zoom" src="https://i.ibb.co/mRZyWCD/2.png" alt="ด้ารการศึกษา">
+            <h1><b>ด้านการศึกษา</b></h1>
+            <h6 class="h7">
+
+            </h6>
+          </div>
+          <div class="containers">
+            <img  class="policy w3-animate-zoom" src="https://i.ibb.co/4s5P4M5/image.png" alt="ด้านการต่างประเทศ">
+            <h1><b>ด้านการต่างประเทศ</b></h1>
+            <h6 class="h7">
+
+            </h6>
+          </div>
+          <div class="containers">
+            <img class="policy w3-animate-zoom"  src="https://i.ibb.co/0CLMrvV/1.png" alt="ด้านความมั่นคง">
+            <h1><b>ด้านความมั่นคง</b></h1>
+            <h6 class="h7">
+
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<div class="body">
+  <footer id="footer">
+    <div class="contain">
+      <div class="sec aboutus">
+        <h2>เกี่ยวกับเรา</h2>
+        <p>50/812 หมู่ 9 ตำบลเกาะเกร็ด <br>อำเภอปากเกร็ด จังหวัดนนทบุรี 11120</p>
+        <ul class="sci">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>สนับสนุนเรา</h2>
+        <ul>
+          <li><a href="">FAQ</a></li>
+          <li><a href="privacy-policy.html">นโยบายคุ้มครองส่วนบุคคล</a></li>
+          <li><a href="">ช่วยเหลิอ</a></li>
+          <li><a href="">บริจาค</a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>นโยบาย</h2>
+        <ul>
+          <li><a href="policy.html">ด้านสังคม</a></li>
+          <li><a href="policy.html">ด้ารการศึกษา</a></li>
+          <li><a href="policy.html">ด้านการต่างประเทศ</a></li>
+          <li><a href="policy.html">ด้านความมั่นคง</a></li>
+        </ul>
+      </div>
+      <div class="sec contact">
+        <h2>ติดต่อเรา</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span><p><a href="tel:+6625445454">02 544 5454</a></p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span><p><a href="mailto:">info.pmft@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="copyrightText">
+  <p>© 2024 พรรคเพื่อสร้างอนาคตไทย. All Rights Reserved.</p>
+</div>
+
+  <div class="num">
+    <p>1</p>
+    <img src="https://i.ibb.co/HFxnR3V/13.png" alt="">
+  </div>
+</body>
+</html>
+<!-- <audio id="myAudio1">
+  <source src="mixkit-arcade-game-jump-coin-216.wav" type="audio/ogg">
+</audio> -->
+<script>
+  var x = document.getElementById("myAudio1"); 
+  
+  function playAudio1() { 
+    x.play(); 
+  } 
+  </script>
+<!-- script -->
+
+<script>
+
+</script>
+
+<script>
+  var menuBtn = document.getElementById("menuBtn")
+  var sideNav = document.getElementById("sideNav")
+  var menu = document.getElementById("menu")
+
+  sideNav.style.right == "-250px";
+
+  menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+      sideNav.style.right = "0";
+      menu.src = "https://i.ibb.co/9cC0MXD/x-menu.png";
+    }
+    else{
+      sideNav.style.right = "-250px";
+      menu.src = "https://i.ibb.co/rs8wZpF/btn.png";
+    }
+  }
+</script>
+
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".css-1ltj605");
+
+        loader.classList.add("css-1ltj605-hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild("loader");
+        })
+    })
+
+</script>
+<style>
+    /*  LOADER  */
+    .css-1ltj605 {
+        height: 100vh;
+        display: flex;
+              position: fixed;
+              inset: 0px;
+              background: rgb(255, 255, 255);
+              z-index: 99999;
+              -webkit-box-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              justify-content: center;
+              transition: opacity 0.75s, visibility 0.75s;
+          }
+    .css-1ltj605-hidden{
+        opacity: 0;
+        visibility: hidden;
+    }
+          
+    .css-nvmvi3 *, .css-nvmvi3 *::before, .css-nvmvi3 *::after {
+              box-sizing: inherit;
+          }
+          .css-z01bqi {
+              display: inline-block;
+              color: var(--or);
+              animation: 1.4s linear 0s infinite normal none running animation-61bdi0;
+          }
+          .css-nvmvi3 *, .css-nvmvi3 *::before, .css-nvmvi3 *::after {
+              box-sizing: inherit;
+          }
+          @keyframes animation-61bdi0{
+          0% {
+              transform: rotate(0deg);
+          }
+          100% {
+              transform: rotate(360deg);
+          }
+            }
+          .css-13o7eu2 {
+              display: block;
+          }
+          .css-nvmvi3 *, .css-nvmvi3 *::before, .css-nvmvi3 *::after {
+              box-sizing: inherit;
+          }
+          .css-14891ef {
+              stroke: currentcolor;
+              stroke-dasharray: 80px, 200px;
+              stroke-dashoffset: 0;
+              animation: 1.4s ease-in-out 0s infinite normal none running animation-1p2h4ri;
+          }
+          
+          .css-nvmvi3 *, .css-nvmvi3 *::before, .css-nvmvi3 *::after {
+              box-sizing: inherit;
+          }
+          
+          @keyframes nimation-1p2h4ri{
+          0% {
+              stroke-dasharray: 1px, 200px;
+              stroke-dashoffset: 0;
+          }
+          50% {
+              stroke-dasharray: 100px, 200px;
+              stroke-dashoffset: -15px;
+          }
+          100% {
+              stroke-dasharray: 100px, 200px;
+              stroke-dashoffset: -125px;
+          }
+          }
+    
+    </style>
+<style>
+    
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+</style>
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+</script>
