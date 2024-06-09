@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
-<title>โปรดเลือกเส้นทาง</title>
+<title>รัฐสภาโรบล็อก</title>
   <style>
     body {
     display: block;
-    margin: 8px;
-      font-family: 'Times New Roman', sans-serif;
+     margin:0;
+      background:#0c0d60;
+      font-family: 'Kanit', sans-serif;
 }
     h1 {
+      color: #fff;
     border-bottom: 1px solid #c0c0c0;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -27,61 +29,75 @@
       font-weight: bold;
       unicode-bidi: isolate;
   }
- a.dir {
-    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABt0lEQVR42oxStZoWQRCs2cXdHTLcHZ6EjAwnQWIkJyQlRt4Cd3d3d1n5d7q7ju1zv/q+mh6taQsk8fn29kPDRo87SDMQcNAUJgIQkBjdAoRKdXjm2mOH0AqS+PlkP8sfp0h93iu/PDji9s2FzSSJVg5ykZqWgfGRr9rAAAQiDFoB1OfyESZEB7iAI0lHwLREQBcQQKqo8p+gNUCguwCNAAUQAcFOb0NNGjT+BbUC2YsHZpWLhC6/m0chqIoM1LKbQIIBwlTQE1xAo9QDGDPYf6rkTpPc92gCUYVJAZjhyZltJ95f3zuvLYRGWWCUNkDL2333McBh4kaLlxg+aTmyL7c2xTjkN4Bt7oE3DBP/3SRz65R/bkmBRPGzcRNHYuzMjaj+fdnaFoJUEdTSXfaHbe7XNnMPyqryPcmfY+zURaAB7SHk9cXSH4fQ5rojgCAVIuqCNWgRhLYLhJB4k3iZfIPtnQiCpjAzeBIRXMA6emAqoEbQSoDdGxFUrxS1AYcpaNbBgyQBGJEOnYOeENKR/iAd1npusI4C75/c3539+nbUjOgZV5CkAU27df40lH+agUdIuA/EAgDmZnwZlhDc0wAAAABJRU5ErkJggg==") left top no-repeat;
+ a {
+   color: #0c0d60;
+   text-decoration: none;
   }
-a.icon {
-    padding-inline-start: 1.5em;
-    text-decoration: none;
-    user-select: auto;
+    
+.filler {
+  width: 100%; 
+  margin: 8px 0;
+  padding: 40px 0;
+  background-color: #fff;  
+  color: #0c0d60;
+  text-align: center;
 }
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
+    
+.row {
+  margin-bottom: 24px;
 }
+.row {
+  height: 100px;
+  display: flex;
+  flex: 0 1 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  @media only screen and (min-width: 520px) {
+    flex-direction: row;
+  }
+}
+
+.col {
+  flex: 0 0 auto;
+  padding: 0 12px;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+    
+.col--1of6 {
+  @media only screen and (min-width: 901px) {
+    flex-basis: 14%;
+    max-width: 14%;
+  }
+}
+
   </style>
 </head>
 <body>
-<h1 id="header">เลือกเส้นทางของ Servers</h1>
-  <table>
-  <thead>
-    <tr class="header" id="theader">
-      <th id="nameColumnHeader" tabindex="0" role="button">ชื่อ</th>
-    </tr>
-  </thead>
-  <tbody id="tbody">
-    <tr>
-      <td data-value="">
-        <a class="icon dir" href="">รัฐบาล</a>
-      </td>
-    </tr>
-    <tr>
-      <td data-value="">
-        <a class="icon dir" href="">รัฐสภา</a>
-      </td>
-    </tr>
-    <tr>
-      <td data-value="">
-        <a class="icon dir" href="">ศาล</a>
-      </td>
-    </tr>
-    <tr>
-      <td data-value="">
-        <a class="icon dir" href="">ผู้บริหารท้องถิ่น</a>
-      </td>
-    </tr>
-    <tr>
-      <td data-value="">
-        <a class="icon dir" href="">องค์กรอิสระ</a>
-      </td>
-    </tr>
-    <tr>
-      <td data-value="">
-        <a class="icon dir" href="">เว็บไซต์พรรคการเมือง</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+  <div style="margin:8px;">
+    <h1 id="header">โปรดเลือกเส้นทางของคุณ</h1>
+  </div>
+  
+  <div class="row">
+    <div class="col col--1of6">
+      <p class="filler"><a class="gov" href="">รัฐบาล</a></p>
+    </div>
+    <div class="col col--1of6">
+      <p class="filler"><a class="pmt" href="">รัฐสภา</a></p>
+    </div>
+    <div class="col col--1of6">
+      <p class="filler"><a class="่jst" href="">ศาล</a></p>
+    </div>
+    <div class="col col--1of6">
+      <p class="filler"><a class="lgo" href="">ท้องถิ่น</a></p>
+    </div>
+    <div class="col col--1of6">
+      <p class="filler"><a class="idp" href="">องค์กรอิสระ</a></p>
+    </div>
+    <div class="col col--1of6">
+      <p class="filler"><a class="ppt" href="">พรรคการเมือง</a></p>
+    </div>
+  </div>
 </body>
 </html>
