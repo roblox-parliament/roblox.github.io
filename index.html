@@ -10,19 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Charm:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="https://i.ibb.co/Bn929ST/Seal-of-the-Office-of-the-Prime-Minister-of-Thailand-svg.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>รัฐสภาสัปปายะสภาสถาน</title>
-</head>
-<!-- <body  onclick="playAudio1()"> -->
-<body>
     <style>
 @keyframes grow-progress {
   from { transform: scaleX(0); background: linear-gradient(300deg,  blue, indigo, violet);}
@@ -74,10 +61,123 @@ p a:hover {
   background-size: 0 3px, 100% 3px;
 }
     </style>
+    <style>
+        body{
+            font-family: 'Kanit', sans-serif;
+            max-height: 10rem;
+        }
+        .intropage2f{
+          position:absolute;
+          width:100%;
+          min-height:100%;
+          top:0;
+          left:0;
+          background-position: top left;
+          background-size: 100% 100%;
+  
+          background-color: #032777 ;
+          background-image: url(  );
+  
+        }
+        .control-intropage2f{
+          max-width:950px;
+          margin:50px auto;
+          width:80%;
+        }
+        .slideintro{
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+        }
+        .slideintro img{ width: 50%;}
+        .btn-intro{ text-align: center; margin: 50px 0;}
+        .btn {
+          display: inline-block;
+          padding: 6px 12px;
+          margin-bottom: 0;
+          font-size: 23px;
+          font-weight: 400;
+          line-height: 23px;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          -ms-touch-action: manipulation;
+          touch-action: manipulation;
+          cursor: pointer;
+          background-image: none;
+          border: 1px solid transparent;
+          border-radius: 4px;
+          color: #fff;
+          text-decoration: none;
+          margin: 5px;
+        }
+        .btn-blue{background-color: #02449b;}
+        .btn-grey{background-color: #444;}
+        .btn-red{background-color: #9b0209;}
+        .btn-blue:hover,.btn-grey:hover,.btn-red:hover{background-color: #222;}
+      </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://i.ibb.co/Bn929ST/Seal-of-the-Office-of-the-Prime-Minister-of-Thailand-svg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>รัฐสภาสัปปายะสภาสถาน</title>
+</head>
+<!-- <body  onclick="playAudio1()"> -->
+
+<body onload="startTime()">
+    
     <div class="MuiBox-root css-1ltj605 loader" id=""><span class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-z01bqi" role="progressbar" style="width: 100px; height: 100px;"><svg class="MuiCircularProgress-svg css-13o7eu2" viewBox="22 22 44 44"><circle class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-14891ef" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle></svg></span></div>
-  <h1>Welcome to เว็บไซต์ รัฐสภาโรบล็อก</h1>
+  
+  <div class="intropage2f">
+        <div class="control-intropage2f">
+            <div class="box-slide2f">
+              <ul class="slideintro" style="margin-top: 100px;">
+                <li>
+                    <a>
+                        <center><h1 style="color:#fff"> ยินดีต้อนรับเข้าสู่ เว็บไซต์ รัฐสภาโรบล็อก</h1></center>
+                    </a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-intro">
+                <a href="#" class="btn btn-blue">ลงนามถวายพระพร</a>
+                <a href="#" class="btn btn-blue">เข้าสู่เว็บไซต์</a>
+                <a href="#" class="btn btn-blue">Enter Site</a>
+                                                    
+            </div>
+        </div>
+    </div>
+    
+  
+  
+  <div id="txt" style="top:0; right:0;position:fixed;padding:16px 12px; z-index:999; background: #00000000; color: white;">00:00:00</div>
 </body>
 </html>
+
+<script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      let ms = today.getMilliseconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      ms = checkTime(ms);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
 <!-- <audio id="myAudio1">
   <source src="mixkit-arcade-game-jump-coin-216.wav" type="audio/ogg">
 </audio> -->
