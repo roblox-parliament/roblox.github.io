@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="icon" href="https://i.ibb.co/VS0cWqq/image.png" type="image/gif" sizes="16x16">
+    <title>พรรคเพื่อไทย</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+    ::selection{
+        background-color: #CB0000;
+        color: #fff;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .relative {
+    position: relative;
+}
+.w-full {
+    width: 100%;
+}
+@media (min-width: 1280px){
+.h-80px {
+    height: 80px;
+}}
+.z-50 {
+    z-index: 50;
+}
+.shadow {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 transparent, 0 0 transparent, var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+.top-0 {
+    top: 0;
+}
+.inset-0, .inset-x-0 {
+    right: 0;
+    left: 0;
+}
+.fixed {
+    position: fixed;
+}
+.h-60px {
+    height: 60px;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.bg-red-500 {
+    --tw-bg-opacity: 1;
+    background-color: #CB0000;
+}
+@media (min-width: 1280px){
+.container {
+    max-width: 1280px;
+}}
+@media (min-width: 1024px){
+.container {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1024px;
+}}
+@media (min-width: 768px){
+.container {
+    max-width: 768px;
+}}
+@media (min-width: 640px){
+.container {
+    max-width: 640px;
+}}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1280px){
+.w-100px {
+    width: 100px;
+}}
+.z-10 {
+    z-index: 10;
+}
+.w-66px {
+    width: 66px;
+}
+.relative {
+    position: relative;
+}
+.flex-none {
+    flex: none;
+}
+img, svg {
+    display: block;
+    vertical-align: middle;
+}
+img {
+    /*border-style: solid;*/
+    max-width: 100%;
+    height: auto;
+}
+@media (min-width: 1280px){
+.static {
+    position: static;
+}}
+@media (min-width: 1280px){
+.p-0 {
+    padding: 0;
+}}
+@media (min-width: 1280px){
+.flex-row {
+    flex-direction: row;
+}}
+.text-center {
+    text-align: center;
+}
+.top-60px {
+    top: 60px;
+}
+.inset-0, .inset-x-0 {
+    right: 0;
+    left: 0;
+}
+/* .absolute {
+    position: absolute;
+}*/
+/* .p-20px {
+    padding: 20px;
+} */ 
+.items-center {
+    align-items: center;
+}
+/* .flex-col {
+    flex-direction: column;
+} */
+.flex {
+    display: flex;
+}
+.bg-red-500 {
+    --tw-bg-opacity: 1;
+    background-color: #CB0000;
+}
+@media (min-width: 768px){
+.tablet\:mt-0 {
+    margin-top: 0;
+}}
+@media (min-width: 768px){
+.tablet\:ml-2 {
+    margin-left: .5rem;
+}}
+.w-max {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+.px-24px {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.py-6px {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.mt-2 {
+    margin-top: .5rem;
+}
+.font-bold {
+    font-weight: 700;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+@media (min-width: 1280px){
+.subtitle-2 {
+    font-size: 22px !important;
+    line-height: 32px !important;
+}}
+.subtitle-2 {
+    font-size: 18px !important;
+}
+.subtitle-1, .subtitle-2 {
+    line-height: 24px !important;
+    font-family: "IBM Plex Sans Thai", sans-serif !important;
+}
+@media (min-width: 1280px){
+.cap-1 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+}}
+.cap-1, .cap-2 {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    font-family: "IBM Plex Sans Thai", sans-serif !important;
+}
+.col-wh{
+    color: white;
+}
+@media (min-width: 1280px){
+.pb-60px {
+    padding-bottom: 60px;
+}}
+@media (min-width: 1280px){
+.pt-76px {
+    padding-top: 76px;
+}}
+.pt-20px {
+    padding-top: 20px;
+}
+@media (min-width: 1024px){
+.containers {
+    padding-left: 60px;
+    padding-right: 60px;
+}}
+.containers {
+    width: fit-content;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.container {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+.font-bold {
+    font-weight: 700;
+}
+h1, h2, h3, h5, p {
+    margin: 0;
+}
+h1, h2, h3, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+@media (min-width: 1280px){
+h2 {
+    font-size: 49px !important;
+    line-height: 64px !important;
+}}
+h2 {
+    font-size: 36px !important;
+    line-height: 48px !important;
+}
+h1, h2 {
+    font-family: "IBM Plex Sans Thai", sans-serif !important;
+}
+.text-center {
+    text-align: center;
+}
+.mt-20px {
+    margin-top: 20px;
+}
+.font-bold {
+    font-weight: 700;
+}
+@media (min-width: 1280px){
+.text-2 {
+    font-size: 18px !important;
+    line-height: 22px !important;
+}}
+.text-2 {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-family: "IBM Plex Sans Thai", sans-serif !important;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+* {
+    outline: 0 !important;
+}
+@media (min-width: 1280px){
+.mt-100px {
+    margin-top: 100px;
+}}
+@media (min-width: 1280px){
+.items-center {
+    align-items: center;
+}}
+@media (min-width: 1280px){
+.flex {
+    display: flex;
+}}
+@media (min-width: 1280px){
+.pr-60px {
+    padding-right: 60px;
+}}
+@media (min-width: 1280px){
+.flex-1 {
+    flex: 1 1 0%;
+}}
+.mt-40px {
+    margin-top: 40px;
+}
+
+.mr-20px {
+    margin-right: 20px;
+}
+
+.mr-50px {
+    margin-right: 50px;
+}
+.font-bold {
+    font-weight: 700;
+}
+.text-black-400 {
+    --tw-text-opacity: 1;
+    color: rgba(51, 51, 51, var(--tw-text-opacity));
+}
+.mt-20px {
+    margin-top: 20px;
+}
+@media (min-width: 1280px){
+.text-1 {
+    font-size: 22px !important;
+    font-weight: bold;
+    font-family: "IBM Plex Sans Thai", sans-serif !important;
+}}
+@media (min-width: 1280px){
+.subtitle-3, .text-1 {
+    line-height: 30px !important;
+}}
+.text-1 {
+    line-height: 26px !important;
+}
+/* .subtitle-3, .text-1 {
+    font-size: 16px !important;
+} */
+.py-10px {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mt-10px {
+    margin-top: 10px;
+}
+.font-bold {
+    font-weight: 700;
+}
+.block {
+    display: block;
+}
+@media (min-width: 1280px){
+.subtitle-1 {
+    font-size: 28px !important;
+    line-height: 36px !important;
+}}
+.subtitle-1, .subtitle-2 {
+    /* line-height: 24px !important; */
+    font-family: "IBM Plex Sans Thai", sans-serif !important;
+}
+.subtitle-1 {
+    /* font-size: 20px !important; */
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+@media (min-width: 1280px){
+.w-3\/5 {
+    width: 60%;
+}}
+@media (min-width: 1280px){
+.pl-60px {
+    padding-left: 60px;
+}}
+@media (min-width: 1280px){
+.ml-0 {
+    margin-left: 0;
+}}
+@media (min-width: 1280px){
+.mx-40px {
+    /* margin-left: -40px; */
+    margin-right: -40px;
+}}
+.mt-10px {
+    margin-top: 10px;
+}
+.mx-20px {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+@media (min-width: 1280px){
+.mt-100px {
+    margin-top: 100px;
+}}
+@media (min-width: 1280px){
+.items-center {
+    align-items: center;
+}}
+@media (min-width: 1280px){
+.flex {
+    display: flex;
+}}
+.justify-between {
+    justify-content: space-between;
+}
+
+.menu:hover{
+    border-bottom: 3px solid white;
+    transition: .5s;
+}
+.menu{
+    border-bottom: 3px solid #CB0000;
+    transition: .5s;
+}
+
+.policy-section {
+    background: linear-gradient(45deg, rgba(196, 0, 0, 0.4), rgba(251, 240, 90, 0.4));
+}
+.pt-40px {
+    padding-top: 40px;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+@media (min-width: 1280px){
+.mr-85px {
+    margin-right: 85px;
+}
+}
+@media (min-width: 1280px){
+.items-center {
+    align-items: center;
+}
+}
+@media (min-width: 1280px){
+.flex {
+    display: flex;
+}
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+
+.mr-20px {
+    margin-right: 20px;
+}
+.font-bold {
+    font-weight: 700;
+}
+
+.w-40px {
+    width: 40px;
+}
+.h-px {
+    height: 1px;
+}
+.bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
+.mb-20px {
+    margin-bottom: 20px;
+}
+.btn-readmore:hover{
+    text-decoration: underline;
+    transition: .5s;
+}
+.btn-readmore{
+    text-decoration: none;
+    transition: .5s;
+}
+.text-center {
+    text-align: center;
+}
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-red-500 {
+    --tw-bg-opacity: 1;
+}
+@media (min-width: 1280px){
+.py-40px {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+}
+@media (min-width: 1280px){
+.containerss {
+    max-width: 1280px;
+}
+}
+@media (min-width: 1024px){
+.containerss {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1024px;
+}
+}
+@media (min-width: 768px){
+.containerss {
+    max-width: 768px;
+}
+}
+@media (min-width: 640px){
+.containerss {
+    max-width: 640px;
+}
+}
+.py-30px {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.containerss {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: repeat( auto-fit, minmax(225px, 1fr) );
+    gap: 10px;
+    color: #fff;
+    font-family: "IBM Plex Sans Thai", sans-serif !important;
+    margin-top: 10px;
+    background-color: #CB0000;
+    border: 2px solid #ff0000;
+    padding: 5px 0;
+    border-radius: 15px 0px;
+    margin-right: 2px;
+    margin-left: 2px;
+    font-size: 10px;
+    transition: .5s;
+}
+.grid-container:hover{
+    background-color: #fff;
+    color: #CB0000;
+    border: 2px solid #ff0000;
+    transition: .5s;
+    font-size: 10.1px;
+    font-weight: 700;
+}
+h2.mg-0{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.table-responsive {
+    overflow-x: auto;
+    min-height: 0.01%;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+table {
+    background-color: #CB0000;
+    color: #fff;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: 1px solid #ddd;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    border-top: 1px solid #ddd;
+}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: 1px solid #ddd;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    border-top: 1px solid #ddd;
+}
+p {
+    font-family: "IBM Plex Sans Thai", sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: none;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #fff;
+}
+table tr td{
+  vertical-align: center;
+}
+</style>
+</head>
+<body>
+    <div class="nav-bar bg-red-500 fixed top-0 inset-x-0 z-50 shadow h-60px flex items-center h-80px" style="height: 80px;">
+        <div class="container flex items-center justify-between" style="max-width:100%!important">
+            <a href="" class="logo w-66px relative z-10 flex-none w-100px nuxt-link-exact-active nuxt-link-active" aria-current="page">
+                <img src="https://i.ibb.co/mtQw9R4/2.png" alt="pheuthai">
+            </a>  
+            <div class="menu-wrap flex flex-col items-center absolute top-60px inset-x-0 bg-green-500 text-center p-20px static flex-row p-0">
+                <a href="#about" class="menu px-24px py-6px font-bold w-max mt-2 cursor-pointer tablet:ml-2 tablet:mt-0 col-wh">
+                    <div class="subtitle-2">เกี่ยวกับ</div> 
+                    <div class="cap-1">About</div>
+                </a>
+                <a href="/policy" class="menu px-24px py-6px font-bold w-max mt-2 cursor-pointer tablet:ml-2 tablet:mt-0 col-wh">
+                    <div class="subtitle-2">นโยบาย</div>
+                    <div class="cap-1">Policies</div>
+                </a>
+                <a href="/policy-area" class="menu px-24px py-6px font-bold w-max mt-2 cursor-pointer tablet:ml-2 tablet:mt-0 col-wh">
+                    <div class="subtitle-2">บริจาค
+                    </div> 
+                    <div class="cap-1">Donation</div>
+                </a>
+                <a href="" class="menu px-24px py-6px font-bold w-max mt-2 cursor-pointer tablet:ml-2 tablet:mt-0 col-wh">
+                    <div class="subtitle-2">สมัครสมาชิกพรรค</div> 
+                    <div class="cap-1">Join</div>
+                </a>
+                <a href="/faq" class="menu px-24px py-6px font-bold w-max mt-2 cursor-pointer tablet:ml-2 tablet:mt-0 col-wh">
+                    <div class="subtitle-2">ตอบข้อสงสัย</div>
+                    <div class="cap-1">FAQ</div>
+                </a>
+            </div>
+        </div> 
+        <!---->
+    </div>
+    <div class="landing-page main pt-60px pt-80px" style="padding-top: 80px;">
+        <div class="intro-section relative">
+            <img src="https://i.ibb.co/xYyDbYH/1.png" alt="" class="w-full">
+        </div> 
+        <div class="why-section pt-20px pb-60px" style="padding-top: 76px;">
+            <div class="containers">
+                <h2 class="subtitle font-bold text-center">
+            วิสัยทัศน์ของผม คือ ประเทศ น่าอยู่ อาสาทำงาน "เพื่อไทยทุกคน”
+                </h2> 
+                <div class="name text-2 mt-20px font-bold text-center">ณภัทร คลังแสง</div> 
+                <div class="flex items-center mt-100px">
+                    <div class="flex-1 pr-60px">
+                        <div class="title mt-40px">
+                            <h2 class="font-bold mr-20px">พรรคเพื่อไทย ทำได้จริง?</h2>
+                        </div> 
+                        <div class="text-1 text-black-400 mt-20px" style="padding-right: 60px; flex: 1 1 0%;">พรรคเพื่อไทยเป็นหนึ่งในพรรคที่เป็นรุ่นก่อนของมัน เช่น พรรคไทยรักไทย มีประสบการณ์ในการบริหารประเทศในหลายสมัย ซึ่งรวมถึงนโยบายที่ประสบความสำเร็จอย่างเห็นได้ชัด เช่น โครงการบัตรทองในด้านสุขภาพ, การเข้าถึงการศึกษา, และโครงการช่วยเหลือเกษตรกร นโยบายเหล่านี้ส่งผลให้เกิดความพึงพอใจในหมู่ประชาชน</div> 
+                    <a href="/why" class="btn-readmore subtitle-1 font-bold block mt-10px py-10px">
+                        อ่านเพิ่มเติม</a>
+                    </div> 
+                    <div class="mx-20px mt-10px w-3/5 ml-0 pl-60px mx-40px image">
+                        <img src="https://i.ibb.co/55ptTp4/image.png" alt="" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="policy-section pt-40px overflow-hidden">
+                <div class="containers">
+                    <div class="flex">
+                        <div class="title mr-85px flex items-center">
+                            <div class="flex items-center">
+                                <h2 class="font-bold mr-20px">500</h2> 
+                            </div> 
+                            <div class="flex items-center">
+                                <h2 class="font-bold mr-50px">นโยบาย</h2> 
+                                <div class="w-40px h-px bg-black"></div>
+                            </div>
+                        </div> 
+                        <div style="margin-bottom: 20px;">
+                            <div class="text-1 text-black-400 mt-20px">
+                            สร้างไทย ให้น่าอยู่ เพื่อไทยทุกคน" เป็นหัวใจหลักของนโยบาย
+                            พรรคเพื่อไทยจึงศึกษา สอบถาม และรับฟังข้อเสนอแนะจากประชาชน
+                            เพื่อใช้เป็นพื้นฐานในการจัดกลุ่มนโยบายและ 
+                            ดัดแปลงให้ครอบคลุมทุกบริบทของประเทศ จึงนำมาสู่ "นโยบายไทย 7 มิติ"
+                            </div> 
+                    <a href="" class="btn-readmore subtitle-2 font-bold block mt-10px w-max py-10px">
+                        ดูนโยบายทั้งหมด</a>
+                        </div>
+                    </div> 
+                </div> 
+            <div class="mx-auto max-w-1440px">
+                <div class="grid grid-cols-1 mt-30px -mx-5px mt-60px grid-cols-3"></div>
+            </div>
+        </div> 
+        <div class="qr-code-section bg-red-500 bg-cover text-center">
+            <div class="subtitle-1 font-bold bg-red-500" style="color: #CB0000; padding-top: 20px;" id="about">...</div> 
+            <div class="containers py-30px py-40px">
+                <div class="subtitle-2 font-bold" style="color: #fff; margin: 10px 0 10px 0;">เกี่ยวกับ - สมาชิกพรรค</div> 
+                <div class="grid-container">
+                    <h2 class="font-bold mg-0">1</h2>วศ.ดร.ณภัทร คลังแสง
+                </div>
+                <div class="grid-container"><h2 class="font-bold mg-0">2</h2>นายจาตุรนต์ ฉายแสง</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">3</h2>ดร.พงศ์พิสุทธิ์ ทวีทรัพย์</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">4</h2>นางสาวจิรารักษ์ สินธุไพร</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">5</h2>นายมงคล เพชรงาม</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">6</h2>พล.อ.ประวิทย์ ใส่ย่าง</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">7</h2>นางสาวธีรรัตน์ สำเร็จวาณิชย์</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">8</h2>นางสมศรี แสงมา</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">9</h2>ดร.ทักษิณ ชินวัตร</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">10</h2>นายณัฐวุฒิ ใสยเกื้อ</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">11</h2>นายวันมูหะมัดนอร์ มะทา</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">12</h2>นายดวงดี ลักขณาอดิศร</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">13</h2>นายจักรพัฒนา แสงมโนนึก</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">14</h2>นางสาวปุณิการ์ ศิริวัชรโชติ</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">15</h2>น.พ.สุรพงษ์ สืบวงศ์ลี</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">16</h2>นายโอชิษฐ์ เกียรติก้องชูชัย</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">17</h2>นายศิริชัย จงภัคดี</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">18</h2>นานวรวงศ์ วรปัญญา</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">19</h2>นายณเดช ราชรักษ์</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">20</h2>นายสิวิละ ลานาสี</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">21</h2>นายธราพงษ์ มหาศิลป์</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">22</h2>นางสาวแพทองธาร ชินวัตร</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">23</h2>นางสาวชลนิส เชียงแสง</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">24</h2>นายอารธา แอร์เวย์ส</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">25</h2>น.ส.ณรินทน์ธิรา เตชะวงศ์วรากุล</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">26</h2>นางปรียาวดี ทวีทรัพย์</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">27</h2>นายอัครเดช ชิดไม่ชอบ</div>
+                <div class="grid-container"><h2 class="font-bold mg-0">28</h2>พ.อ.ศร ราชกิจ</div>
+                <style>.hidden{display: none;}</style>
+                <div class="grid-container"><h2 class="font-bold hidden mg-0">29</h2></div>
+                <div class="grid-container"><h2 class="font-bold hidden mg-0">30</h2></div>
+                <!-- <hr style="height: 2px; border: none; position: relative; background: #fff;margin-top: 20px;"> -->
+                <div style="display: block;margin-top: 20px;"></div>
+                <table class="table table-responsive table-bordered" style="width: 100%; height: auto;">
+                    <tbody>
+                        <tr>
+                            <td colspan="3"><p class="font-bold">กรรมการบริหารพรรค</p></td>
+                        </tr>
+                    <tr style="color: #fff;">
+                            <td width="27" rowspan="2">
+                            <p>&nbsp;1<span>.</span></p>
+                            </td>
+                        <td width="214" rowspan="2">
+                            <p>วศ.ดร.ณภัทร&nbsp;&nbsp;<span>คลังแสง</span></p>
+                        </td>
+                        <td width="517">
+                            <p>หัวหน้าพรรคเพื่อไทย</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="517">
+                            <p>นายทะเบียนสมาชิกพรรคเพื่อไทย</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p class="font-bold">รองหัวหน้าพรรคเพื่อไทย</p></td>
+                    </tr>
+                    <tr style="color: #fff;">
+                        <td width="27">
+                        <p>&nbsp;2<span>.</span></p>
+                        </td>
+                    <td width="214">
+                        <p>ดร.พงศ์พิสุทธิ์&nbsp;&nbsp;<span>ทวีทรัพย์</span></p>
+                    </td>
+                    <td width="517" rowspan="2">
+                        <p>รองหัวหน้าพรรคเพื่อไทย</p>
+                    </td>
+                </tr>
+                <tr style="color: #fff;">
+                        <td width="27">
+                        <p>&nbsp;3<span>.</span></p>
+                        </td>
+                    <td width="214">
+                        <p>นางสาวปุณิการ์&nbsp;&nbsp;<span>ศิริวัชรโชติ</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><p class="font-bold">เลขาธิการพรรคเพื่อไทย</p></td>
+                </tr>
+                    <tr>
+                        <td width="27">
+                            <p>&nbsp;4<span>.</span></p>
+                        </td>
+                        <td width="214">
+                            <p>ดร.ทักษิณ ชินวัตร</p>
+                        </td>
+                        <td width="517">
+                            <p>เลขาธิการพรรคเพื่อไทย</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="27">
+                            <p>&nbsp;5<span>.</span></p>
+                        </td>
+                        <td width="214">
+                            <p>นางสาวจิรารักษ์ สินธุไพร</p>
+                        </td>
+                        <td width="517" rowspan="2">
+                            <p>รองเลขาธิการพรรคเพื่อไทย</p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="27">
+                            <p>&nbsp;6<span>.</span></p>
+                        </td>
+                        <td width="214">
+                            <p>น.พ.สุรพงษ์ สืบวงศ์ลี</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p class="font-bold">กรรมการบริหารพรรคเพื่อไทย</p></td>
+                    </tr>
+                    <tr>
+                        <td width="27">
+                            <p>&nbsp;7<span>.</span></p>
+                        </td>
+                        <td width="214">
+                            <p>นายจักรพัฒนา แสงมโนนึก</p>
+                        </td>
+                        <td width="517" rowspan="3">
+                            <p>กรรมการบริหารพรรคเพื่อไทย</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="27">
+                            <p>&nbsp;8<span>.</span></p>
+                        </td>
+                        <td width="214">
+                            <p>นางสมศรี แสงมา</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="27">
+                            <p>&nbsp;9<span>.</span></p>
+                        </td>
+                        <td width="214">
+                            <p>นางสาวธีรรัตน์ สำเร็จวาณิชย์</p>
+                        </td>
+                    </tr>
+                    
+            
+            <tr>
+                <td colspan="3"><p class="font-bold">ประธานที่ปรึกษาพรรคเพื่อไทย</p></td>
+            </tr>
+            <tr>
+                <td width="27">
+                    <p>&nbsp;10<span>.</span></p>
+                </td>
+                <td width="214">
+                    <p>นางสาวแพทองธาร ชินวัตร</p>
+                </td>
+                <td width="517" rowspan="2">
+                    <p>ประธานที่ปรึกษาพรรคเพื่อไทย</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="27">
+                    <p>&nbsp;11<span>.</span></p>
+                </td>
+                <td width="214">
+                    <p>นายจาตุรนต์ ฉายแสง</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"><p class="font-bold">โฆษกพรรคเพื่อไทย</p></td>
+            </tr>
+            <tr>
+                <td width="27">
+                    <p>&nbsp;12<span>.</span></p>
+                </td>
+                <td width="214">
+                    <p>นายณเดช ราชรักษ์</p>
+                </td>
+                <td width="517">
+                    <p>โฆษกพรรคเพื่อไทย</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="27">
+                    <p>&nbsp;13<span>.</span></p>
+                </td>
+                <td width="214">
+                    <p>นางสาวชลนิส เชียงแสง</p>
+                </td>
+                <td width="517">
+                    <p>รองโฆษกพรรคเพื่อไทย</p>
+                </td>
+            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class=" pt-40px overflow-hidden">
+        <div class="containers">
+            <center style="">
+                <h1 class="font-bold"><u>สมาชิกสภาผู้แทนราษฎร</u></h1>
+                <p style="color: #000;">ผู้จะเป็นคนที่สื่อสารกับประชาชน</p>
+            </center>
+            <div class="flex">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body></html>
