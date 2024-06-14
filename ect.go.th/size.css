@@ -1,0 +1,30 @@
+@media (max-width: 4000px) {
+    .tab-container .tab-contents.style-02 {
+        padding: 0 10rem;
+    }
+    .item p{
+        font-size: 1.25rem;
+        font-weight: 500;
+        transition: color 0.25s;
+    }
+}
+
+@media (max-width: 770px) {
+    .tab-container .tab-contents.style-02 {
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .tab-container .tab-contents.style-02 {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .item p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
+

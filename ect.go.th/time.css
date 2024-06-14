@@ -1,0 +1,6 @@
+/* หากเลือกตั้งจบแล้ว */
+
+.none {
+    display: none;
+    /* display: block; */
+}
