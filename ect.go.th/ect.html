@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECT - LOGIN</title>
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="block.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="size.css">
+    <link rel="stylesheet" href="navs.css">
+    <link rel="stylesheet" href="grids.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.6;
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+        header{
+            padding: 0 1.25rem;
+            transition: color 0.25s;
+            background: #fff;
+        }
+        .items{
+            padding: 0.375rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .item:nth-child(1){margin: 0 0.625rem 0 0;}
+        .item img{
+            display: block;
+            height: 3.5rem;
+            width: auto;
+        }
+        .section-padding{padding:4rem 0;}
+        .section-padding-top{padding-top:2rem!important;}
+        .container{position:relative; width:100%; max-width:calc(1300px - 2rem); padding:0; margin:0 auto;}
+        @media screen and (min-width:1600px){
+            .container{max-width:calc(1600px - 2rem);}
+        }
+        @media screen and (max-width:1299.98px){
+            .container{max-width:calc(1200px - 2rem);}
+        }
+        @media screen and (max-width:1199.98px){
+            .container{max-width:calc(992px - 2rem);}
+        }
+        @media screen and (max-width:991.98px){
+            .section-padding{padding:3.5rem 0;}
+            .section-padding-top{padding-top:1.5rem!important;}
+            .container{max-width:calc(768px - 2rem);}
+        }
+        @media screen and (max-width:767.98px){
+            .section-padding{padding:3rem 0;}
+            .section-padding-top{padding-top:.5rem!important;}
+            .container{max-width:calc(578px - 2rem);}
+        }
+        @media screen and (max-width:575.98px){
+            .section-padding{padding:2.5rem 0;}
+            .section-padding-top{padding-top:.25rem!important;}
+            .container{max-width:calc(100% - 2rem);}
+        }
+        .section-padding {
+            padding: 4rem 0;
+        }
+    </style>
+    <link rel="icon" href="https://www.ect.go.th/ect_th/app/images/Logo-ect-2.svg">
+</head>
+<body>
+    <!-- <header>
+        <div class="logo">
+            <center>
+                <div class="items">
+                    <div class="item"><img src="https://www.ect.go.th/ect_th/app/images/Logo-ect-2.svg" width="100px"></div>
+                    <div class="item"><p>สำนักงานคณะกรรมการการเลือกตั้ง</p></div>
+                </div>
+            </center>
+        </div>
+    </header> -->
+
+    <!-- <div class="container">
+        <div class="text-center color-black-theme aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
+            <center>
+                <h3 class="color-20 fw-400">เข้าสู่ระบบ</h3>
+                <form action="">
+                    
+                </form>
+            </center>
+        </div>
+    </div> -->
+    <nav class="stopnav style-02 bg-04 color-white" style="overflow: hidden;">
+        <div class="wrapper">
+            <div class="blocks blocks-main">
+                <div class="blocks hide-mobile">
+                    <a href="" rel="noopener noreferrer" target="_blank" class="btn-social">
+                        <em class="fa-brands fa-facebook-f"></em>
+                    </a>
+                    <a href="" rel="noopener noreferrer" target="_blank" class="btn-social">
+                        <em class="fa-brands fa-twitter"></em>
+                    </a>
+                    <a href="" rel="noopener noreferrer" target="_blank" class="btn-social">
+                        <em class="fa-brands fa-youtube"></em>
+                    </a>
+                </div>
+                <div class="blocks hide-mobile">
+                    <div class="option bcolor-04 no-border-right" style="pointer-events:none;">
+                        <a class="icon hotline" href="#"><em class="fa-solid fa-phone"></em><p class="sm fw-300">สายด่วน กกต. 1444</p></a>
+                    </div>
+                    <div class="option-select hide-mobile" style="margin:unset;">
+                        <div class="select bg-05 bg-white-theme">TH <div class="chev"><em class="fa-solid fa-chevron-down"></em></div></div>
+                        <!--[-->
+                        <div class="dropdown"><a href="/ect_th/en/main" class="item">EN</a></div>
+                        <!--]-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="topnav style-02">
+        <div class="wrapper">
+            <a class="logo" href="">
+                <div class="img-container">
+                    <img src="https://www.ect.go.th/ect_th/app/images/Logo-ect-2.svg" alt="Website Logo">
+                </div>
+                <div class="text-wrapper">
+                    <p>สำนักงานคณะกรรมการการเลือกตั้ง</p>
+                </div>
+            </a>
+            <div class="menu-container hide-tablet" id="topnav-menu">
+                <div class="menu">
+                    <a href="">หน้าหลัก</a>
+                </div>
+                <!--[-->
+            <div class="menu  has-children"><a href="ect-login.html">เข้าคูหาเลือกตั้ง </a></div>
+            <div class="menu  has-children"><a href="ect-results.html">ระบบรายงานผลการเลือกตั้ง </a></div>
+            
+            <div class="menu  has-children"><a>ติดต่อเรา <em class="fas fa-chevron-down"></em></a><!---->
+                <div class="submenu-dropdown"><div class="submenu-container"><div class="submenu-wrapper size-03"><div class="submenu"><div class="wrapper"><div class="dot"><div class="dot-list"></div></div>
+                <a target="_self" href="">ติดต่อหน่วยงาน</a></div><!----></div><div class="submenu"><div class="wrapper"><div class="dot"><div class="dot-list"></div></div>
+                <a target="_self" href="">คำถามที่พบบ่อย FAQ</a></div><!----></div><div class="submenu"><div class="wrapper"><div class="dot"><div class="dot-list"></div></div>
+                <a target="_self" href="">กระดานถามตอบ</a></div><!----></div><div class="submenu"><div class="wrapper"><div class="dot"><div class="dot-list"></div></div>
+                <a target="_self" href="">แจ้งเบาะแสทุจริตการเลือกตั้ง</a></div><!----></div><div class="submenu"><div class="wrapper"><div class="dot"><div class="dot-list"></div></div>
+                <a target="_self" href="">ศูนย์รับเรื่องราวร้องทุกข์ คณะกรรมการการเลือกตั้ง</a></div><!----></div><div class="submenu"><div class="wrapper"><div class="dot"><div class="dot-list"></div></div>
+                <a target="_self" href="">ร้องเรียนการทุจริตและการประพฤติมิชอบ</a></div><!----></div><div class="submenu"><div class="wrapper"><div class="dot"><div class="dot-list"></div></div>
+                <a target="_self" href="">แบบประเมินความพึงพอใจเว็บไซต์</a></div><!----></div></div></div></div></div><!--]--></div><div class="blocks"><a class="option global-search-toggle pb-1" href="#"><img src="https://i.ibb.co/dch52tZ/search-02.png" alt="Icon"></a><a class="option sidenav-toggle show-tablet" href="#"><div class="hamburger"><div></div><div></div><div></div></div></a></div></div>
+        </nav>
+        <section class="section-02 section-padding" style="margin-top: 68px;">
+            <div class="img-bg" style="background-image:url('https://i.ibb.co/bs6JK00/21.jpg');"></div>
+            <div class="container">
+                <h3 class="fw-700 color-black-theme aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">องค์ความรู้การเลือกตั้ง</h3>
+                <div class="grids">
+                    <div class="grid xl-50 lg-75 sm-100">
+                        <div class="grids">
+                            <!--[-->
+                            <a class="grid sm-50">
+                                <div class="ss-card">
+                                    <div class="img-wrapper">
+                                        <div class="ss-card-03 bg-black-theme aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+                                            <div class="wrapper">
+                                                <h5 class="title color-05 lh-sm fw-500">การได้มาซึ่งสมาชิกวุฒิสภา</h5>
+                                                <p class="desc fw-400 color-white-theme mt-1"></p>
+                                            </div>
+                                            <div class="filter style-02">
+                                                <div class="wrapper">
+                                                    <div class="icon op-0">
+                                                        <img src="/ect_th/app/images/icon/51.png" alt="Icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-line style-01"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="grid sm-50">
+                                <div class="ss-card">
+                                    <div class="img-wrapper">
+                                        <div class="ss-card-03 bg-black-theme aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+                                            <div class="wrapper">
+                                                <h5 class="title color-05 lh-sm fw-500">การบริจาคภาษีแก่พรรคการเมือง</h5>
+                                                <p class="desc fw-400 color-white-theme mt-1">ประชาชนผู้เสียภาษีที่เป็นบุคคลธรรมดาสามารถมีส่วนร่วมทางการเมืองได้ ด้วยผ่านการบริจาคภาษีเงินได้บุคคลธรรมดาประจำปี (ภงด.90 – ภงด.91) ให้แก่พรรคการเมือง</p>
+                                            </div>
+                                            <div class="filter style-02">
+                                                <div class="wrapper">
+                                                    <div class="icon op-0">
+                                                        <img src="/ect_th/app/images/icon/51.png" alt="Icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-line style-01"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="grid sm-50">
+                                <div class="ss-card">
+                                    <div class="img-wrapper">
+                                        <div class="ss-card-03 bg-black-theme aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+                                            <div class="wrapper">
+                                                <h5 class="title color-05 lh-sm fw-500">การแจ้งเหตุไม่อาจไปใช้สิทธิเลือกตั้งทางสื่ออิเล็กทรอนิกส์</h5>
+                                                <p class="desc fw-400 color-white-theme mt-1">ขั้นตอนการแจ้งเหตุจำเป็นที่ไม่อาจไปใช้สิทธิเลือกตั้งสมาชิกสภาท้องถิ่นหรือผู้บริหารท้องถิ่นทางอิเล็กทรอนิกส์ </p>
+                                            </div>
+                                            <div class="filter style-02">
+                                                <div class="wrapper">
+                                                    <div class="icon op-0">
+                                                        <img src="/ect_th/app/images/icon/51.png" alt="Icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-line style-01"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="grid sm-50">
+                                <div class="ss-card">
+                                    <div class="img-wrapper">
+                                        <div class="ss-card-03 bg-black-theme aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+                                            <div class="wrapper">
+                                                <h5 class="title color-05 lh-sm fw-500">เลือกตั้งผู้บริหารท้องถิ่น</h5>
+                                                <p class="desc fw-400 color-white-theme mt-1">วันอาทิตย์ที่ 14 กรกฎาคม 2567 เวลา 08.00 - 17.00 น. เลือกตั้ง<!--สมาชิกสภาท้องถิ่นและ-->ผู้บริหารท้องถิ่นในทุกภาค ณ หน่วยเลือกตั้งที่ท่านมีชื่ออยู่</p>
+                                            </div>
+                                            <div class="filter style-02">
+                                                <div class="wrapper">
+                                                    <div class="icon op-0">
+                                                        <img src="/ect_th/app/images/icon/51.png" alt="Icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-line style-01"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a class="back-to-top active" href="#"><em class="fas fa-chevron-up"></em></a>
+        <nav class="footer style-03 section-padding">
+            <div class="container">
+                <div class="footer-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
+                    <div class="wrapper">
+                        <div class="grids">
+                            <div class="grid sm-100">
+                                <div class="grids">
+                                    <div class="grid xl-40 lg-50 md-100 sm-100">
+                                        <p class="xs mt-3">
+                                            <a class="h-color-04 color-02 fw-500 border-bottom bcolor-02 mr-3" href="/ect_th/th/policy">ข้อกำหนด เงื่อนไข และนโยบายส่วนตัว</a>
+                                            <span class="mr-3">/</span>
+                                            <span class="color-05 fw-500">สำนักงานคณะกรรมการการเลือกตั้ง</span>
+                                        </p>
+                                    </div>
+                                    <div class="grid xl-60 lg-50 md-100 sm-100"><div class="d-flex jc-end jc-start-md">
+                                        <p class="xs mt-3"><b>สงวนลิขสิทธิ์ 2024 - สำนักงานรัฐสภาสร้างสรรค์เพื่อส่งเสริมประชาธิปไตยและเยาวชนไทย</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+</body>
+</html>
