@@ -12,7 +12,6 @@
     body {
     display: block;
      margin:0;
-      background:#0c0d60;
       font-family: 'Prompt', sans-serif;
    overflow-X: hidden;
 }
@@ -82,26 +81,84 @@
   <div style="margin:8px;">
     <h1 id="header">โปรดเลือกเส้นทางของคุณ</h1>
   </div>
-  
-  <div class="row">
-    <div class="col col--1of6">
-      <p class="filler"><a class="gov" href="gov.html">รัฐบาล</a></p>
+    <div id="container2">
+        <style>
+    #container2 {
+        max-width: 1200px;
+        margin: auto;
+    }
+    #about2>.list_item {
+    margin: 30px 0 50px 0;
+}
+body {
+    margin: 0;
+}
+#about2>.list_item>h2 {
+    font-family: 'Kanit-Medium';
+    font-size: 20px;
+    text-transform: uppercase;
+    border-left: 4px solid #f2a225;
+}
+#about2>.list_item>h2>span {
+    margin: 0 0 0 15px;
+}
+#about2>.list_item>ul {
+    margin: 0 0 0 20px;
+}
+#about2>.list_item>ul li {
+    list-style: none;
+    display: inline-block;
+    width: 32.95%;
+    vertical-align: top;
+    margin: 0 0 20px 0;
+}
+
+.content_mobile, .content_mobile2, .content_mobile3, .content_mobile4, .content_mobile5, .content_mobile6, .content_mobile7, #bxslider1_mobile, #bxslider2_mobile, .line_head, .line_head2, .bg_line_m, .box_left_m, .box_right_m, .apply_m {
+    display: none !important;
+}
+        </style>
+        <div id="about2">
+            <div class="list_item">
+                <h2><span>โปรดเลือกเส้นทางของคุณ</span></h2>
+                <ul>
+                    <li>
+                        <a href="gov">
+                            <h3>รัฐบาล</h3>
+                            <p>สำนักเลขาธิการนายกรัฐมนตรี ทำเนียบรัฐบาล เลขที่ 1 ถนนนครปฐม เขตดุสิต กรุงเทพฯ 10300</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pmt">
+                        <h3>รัฐสภา </h3>
+                        <p>สำนักงานเลขาธิการสภาผู้แทนราษฎร 1111 ถ.สามเสน
+                            แขวงถนนนครไชยศรี เขตดุสิต กรุงเทพฯ 10300</p>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="jst">
+                        <h3>ศาลยุติธรรม</h3>
+                        <p>อาคารสำนักงานศาลยุติธรรม เลขที่ 55 ถนนรัชดาภิเษก แขวงจอมพล  
+                            เขตจตุจักร กรุงเทพมหานคร 10900</p>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="lgo">
+                        <h3>สำนักงานส่วนภูมิภาค</h3>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="idp">
+                        <h3>องค์กรอิสระ</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pol-party">
+                        <h3>พรรคการเมือง</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="col col--1of6">
-      <p class="filler"><a class="pmt" href="pmt.html">รัฐสภา</a></p>
-    </div>
-    <div class="col col--1of6">
-      <p class="filler"><a class="่jst" href="jst.html">ศาล</a></p>
-    </div>
-    <div class="col col--1of6">
-      <p class="filler"><a class="lgo" href="lgo.html">ท้องถิ่น</a></p>
-    </div>
-    <div class="col col--1of6">
-      <p class="filler"><a class="idp" href="idp.html">องค์กรอิสระ</a></p>
-    </div>
-    <div class="col col--1of6">
-      <p class="filler"><a class="ppt" href="pol-party.html">พรรคการเมือง</a></p>
-    </div>
-  </div>
 </body>
 </html>
