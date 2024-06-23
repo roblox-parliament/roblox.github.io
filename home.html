@@ -81,12 +81,29 @@
   
     <div class="sub_head margin_left">
         <style>
-@media (min-width: 1096px) {
+@media (max-width: 1096px) {
   #about2>.list_item>ul li {
-      width: auto;
+      width: auto!important;
   }
+
+  @media (max-width: 640px) {
+  .sub_head>.square {
+    display: none!important;
 }
-          
+    .sub_head>.text {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+    .sub_head {
+    padding: 0;
+    text-align: center;
+}
+    .margin_left {
+    margin-left: 0;
+}
+  }
 .margin_left {
     margin-left: 36%;
 }
@@ -99,6 +116,8 @@
     border: 11px solid #f2a225;
     width: 144px;
     height: 149px;
+  
+    display: block;
 }
 .sub_head>.text {
     background: #fff;
