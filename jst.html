@@ -1,360 +1,24 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ศาลยุติธรรม - Court of Justice</title>
-</head>
-<body>
-    <h1>กำลังพัฒนา 
-        <div class="loading2">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </h1>
-    <style>
-        
-    /* Loading 2 */
-    
 
-    h1{
-        font-size: 40px;
-        margin-block-start: 1em;
-        margin-left: 10px;
-    }
-    
-    .loading2 {
-        margin-top: -20px;
-        margin-left: 250px;
-        position: relative;
-        width: 110px;
-        display: flex;
-        align-items: center;
-    }
-    .loading2 span {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-color: #000;
-        border-radius: 30px;
-        position: absolute;
-    }
-
-    .loading2 span:first-child {
-        animation: loading2-span1 1.3s infinite;
-        left: 0;
-    }
-
-    .loading2 span:nth-child(2) {
-        animation: loading2-span2 1.3s infinite;
-        left: 40px;
-    }
-
-    .loading2 span:nth-child(3){
-        animation: loading2-span3 1.3s infinite;
-        left: 80px;
-    }
-
-    @keyframes loading2-span1 {
-        0% {
-            height: 30px;
-        }
-        25% {
-            height: 60px;
-        }
-        50% {
-            height: 30px;
-        }
-        100% {
-            height: 30px;
-        }
-    }
-
-    @keyframes loading2-span2 {
-        0% {
-            height: 30px;
-        }
-        25% {
-            height: 30px;
-        }
-        50% {
-            height: 60px;
-        }
-        75% {
-            height: 30px;
-        }
-        100% {
-            height: 30px;
-        }
-    }
-
-    @keyframes loading2-span3 {
-        0% {
-            height: 30px;
-        }
-        25% {
-            height: 30px;
-        }
-        50% {
-            height: 30px;
-        }
-        75% {
-            height: 60px;
-        }
-        100% {
-            height: 30px;
-        }
-    }
-
-    </style>
-</body>
-</html>
- -->
  <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ศาลยุติธรรม</title>
+    <link rel="icon" href="https://www.coj.go.th/th/file/get/file/20200513d41d8cd98f00b204e9800998ecf8427e094310.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: "Bai Jamjuree", sans-serif;
-            margin: 0;
-            padding: 0;
-            transition: all 0.3s ease;
-        }
-
-        header {
-            position: relative;
-            background: linear-gradient(to right, #FFD700, #FFA500);
-            border-top: 5px solid transparent;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding: 10px 20px 0; /* เปลี่ยน padding-bottom เป็น 0 */
-            transition: all 0.5s ease; /* เพิ่ม transition เพื่อให้ header เปลี่ยนแปลงด้วยความนุ่มนวล */
-        }
-
-        .logo {
-            position: absolute;
-            bottom: -20px; /* เลยขอบล่าง */
-            left: 20px;
-            width: 60px;
-            height: 60px;
-            background-image: url('path_to_logo_image');
-            background-size: cover;
-            background-position: center;
-        }
-
-        nav {
-            flex: 1 0 100%;
-            margin-top: 10px;
-        }
-
-        .menu {
-            display: flex;
-            padding: 0;
-            margin: 0;
-            flex-wrap: wrap;
-        }
-
-        .menu-item {
-            position: relative;
-            margin-left: 20px;
-            list-style: none;
-        }
-
-        .menu-link {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-            padding: 10px;
-            display: block;
-        }
-        .menu-link:hover {
-            background-color: #000157; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
-        }
-
-
-        .menu-item:hover .submenu {
-            display: block;
-        }
-
-        .submenu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .submenu li {
-            list-style: none;
-        }
-
-        .submenu a {
-            text-decoration: none;
-            color: black;
-            padding: 10px 20px;
-            display: block;
-        }
-
-        .submenu a:hover {
-            background: #f0f0f0;
-        }
-
-        .control-panel {
-            display: flex;
-            align-items: center;
-            height: 20px;
-            flex: 1 0 100%;
-            margin-left: auto; /* เพิ่มบรรทัดนี้ */
-        }
-
-        .control-panel button {
-            margin-left: 10px;
-            padding: 5px 10px;
-            font-size: 16px;
-            border: 1px solid black; /* เพิ่ม border */
-            background-color: white; /* สีพื้นหลัง */
-            color: black; /* สีข้อความ */
-            border-radius: 8px; /* เพิ่มขอบโค้ง */
-        }
-
-        .control-panel button.active {
-            border-color: black; /* สี border เมื่อ active */
-        }
-
-        /* CSS เพิ่มเติมสำหรับปุ่มสี */
-        #whiteButton {
-            background-color: #000;
-            color: #fff;
-        }
-
-        #blackButton {
-            background-color: #fff;
-            color: #000;
-        }
-
-        #yellowButton {
-            background-color: #000;
-            color: yellow;
-        }
-        @media (max-width: 2400px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            nav {
-                order: 2;
-                width: 100%;
-            }
-            .control-panel {
-                order: 1;
-                width: 100%;
-                height: 20px;
-                margin-bottom: 10px;
-            }
-        }
-        
-
-        /* Hamburger Menu CSS */
-        .hamburger {
-            display: none;
-            flex: 1 0 100%;
-            justify-content: flex-end;
-        }
-
-        .hamburger-button {
-            display: none;
-            cursor: pointer;
-            padding: 10px;
-            background-color: transparent;
-            border: none;
-            outline: none;
-        }
-
-        .hamburger-icon {
-            width: 30px;
-            height: 3px;
-            background-color: #fff;
-            margin: 6px 0;
-            transition: transform 0.3s ease;
-        }
-
-        .hamburger-icon.active {
-            transform: rotate(45deg);
-        }
-
-        .hamburger-menu {
-            position: absolute;
-            top: auto;
-            right: 0;
-            background-color: #121350;
-            width: 200px;
-            height: auto;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            margin-top: 10px;
-        }
-
-        .hamburger-menu.active {
-            display: flex;
-        }
-
-        .hamburger-menu a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;  
-            padding: 10px 0 10px 10px;
-            width: 100%;
-            
-        }
-
-        .hamburger-menu a:hover {
-            background-color: #0011a7;
-        }
-
-        @media (max-width: 600px) {
-            .menu {
-                display: none;
-            }
-
-            .hamburger-button {
-                display: flex;
-            }
-
-            .hamburger {
-                order: 2;
-                width: 100%;    
-                display: block;
-            }
-
-            .control-panel {
-                order: 1;
-                width: 100%;
-                height: 20px;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="jst.css">
+    <script src="jt.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="https://www.coj.go.th/th/file/get/file/20200513d41d8cd98f00b204e9800998ecf8427e094310.png" alt="">
+        </div>
         <nav>
-            <ul class="menu" style="background-color: #121350;">
+            <ul class="menu" >
                 <li class="menu-item"><a href="#" class="menu-link">หน้าแรก</a></li>
                 <li class="menu-item">
                     <a href="#" class="menu-link">เกี่ยวกับศาลยุติธรรม</a>
@@ -390,9 +54,9 @@
         </nav>
         <div class="hamburger">
             <button class="hamburger-button" onclick="toggleMenu()">
-                <div class="hamburger-icon" id="hamburgerIcon"></div>
-                <div class="hamburger-icon" id="hamburgerIcon"></div>
-                <div class="hamburger-icon" id="hamburgerIcon"></div>
+                <div class="hamburger-icon bar1" id="hamburgerIcon"></div>
+                <div class="hamburger-icon bar2" id="hamburgerIcon"></div>
+                <div class="hamburger-icon bar3" id="hamburgerIcon"></div>
             </button>
         </div>
         <div class="control-panel">
@@ -413,70 +77,30 @@
             <a href="#" class="menu-link">ติดต่อหน่วยงาน</a>
         </div>
     </header>
-    
-    <script>
-        let currentFontSize = 16;
-    
-        function increaseFontSize() {
-            currentFontSize += 2;
-            document.body.style.fontSize = currentFontSize + 'px';
-        }
-    
-        function resetFontSize() {
-            currentFontSize = 16;
-            document.body.style.fontSize = currentFontSize + 'px';
-        }
-    
-        function decreaseFontSize() {
-            if (currentFontSize > 10) {
-                currentFontSize -= 2;
-                document.body.style.fontSize = currentFontSize + 'px';
-            }
-        }
-    
-        function toggleMenu() {
-            let menu = document.getElementById('hamburgerMenu');
-            let icon = document.getElementById('hamburgerIcon');
-    
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-                icon.classList.remove('active');
-            } else {
-                menu.style.display = 'flex';
-                icon.classList.add('active');
-            }
-        }
-    
-        function changeColor(color) {
-            // รีเซ็ตการเปลี่ยนสีทั้งหมด
-            document.getElementById('blackButton').classList.remove('active');
-            document.getElementById('whiteButton').classList.remove('active');
-            document.getElementById('yellowButton').classList.remove('active');
-    
-            // ตั้งค่าสีพื้นหลังและข้อความตามที่เลือก
-            switch (color) {
-                case 'black':
-                    document.body.style.backgroundColor = 'white';
-                    document.body.style.color = 'black';
-                    document.querySelector('header').style.background = 'linear-gradient(to right, #FFD700, #FFA500)';
-                    break;
-                case 'white':
-                    document.body.style.backgroundColor = 'black';
-                    document.body.style.color = 'white';
-                    document.querySelector('header').style.background = 'linear-gradient(to right, #121350, #121350)';
-                    break;
-                case 'yellow':
-                    document.body.style.backgroundColor = 'black';
-                    document.body.style.color = 'yellow';
-                    document.querySelector('header').style.background = 'linear-gradient(to right, #000, #000)';
-                    break;
-                default:
-                    break;
-            }
-    
-            // เพิ่มคลาส active ที่ปุ่มที่เลือก
-            document.getElementById(color + 'Button').classList.add('active');
-        }
-    </script>
-    </body>
-    </html>
+
+    <div class="slider">
+        <img src="https://www.coj.go.th/th/file/get/file/20201008a8be047b494cfccbc2d0b5928a8742bc102731.jpg" alt="">
+    </div>
+
+    <div class="menuF">
+        <div class="box box1">
+            <div class="image ratio-1-1">
+                <a href="">
+                    <img src="https://www.coj.go.th/th/file/get/file/201806129948c645c094247794f4c7acdbeb2bb6150204.png" alt="">
+                </a>
+            </div>
+            <div class="detail">
+                <div class="detail-title">
+                    <a class="" href="" target="_blank" tabindex="0">ระบบสืบค้นคำพิพากษา</a>
+                </div>
+                <div class="detail-row">				
+                    <a class="" href="" target="_blank" tabindex="0">ศาลฎีกา</a>
+                </div>
+            </div>
+        </div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+</html>
