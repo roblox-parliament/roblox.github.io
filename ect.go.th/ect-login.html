@@ -20,7 +20,16 @@
    function onSubmit(token) {
      document.getElementById("demo-form").submit();
    }
+         
  </script>
+    <script>
+        {
+  "success": true|false,
+  "challenge_ts": timestamp,  // timestamp of the challenge load (ISO format yyyy-MM-dd'T'HH:mm:ssZZ)
+  "hostname": string,         // the hostname of the site where the reCAPTCHA was solved
+  "error-codes": [...]        // optional
+}
+    </script>
     <style>
         html, body {
             padding: 0;
