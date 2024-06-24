@@ -1,0 +1,247 @@
+
+        body {
+            font-family: "Bai Jamjuree", sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            border-top: 5px solid transparent;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px 20px 0; /* เปลี่ยน padding-bottom เป็น 0 */
+            transition: all 0.5s ease; /* เพิ่ม transition เพื่อให้ header เปลี่ยนแปลงด้วยความนุ่มนวล */
+        }
+
+        .logo {
+            position: absolute;
+            bottom: -20px; /* เลยขอบล่าง */
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background-image: url('path_to_logo_image');
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav {
+            flex: 1 0 100%;
+            margin-top: 10px;
+        }
+
+        .menu {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            position: relative;
+            margin-left: 20px;
+            list-style: none;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+        }
+        .menu-link:hover {
+            background-color: #000157; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+        }
+
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .submenu li {
+            list-style: none;
+        }
+
+        .submenu a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        .submenu a:hover {
+            background: #f0f0f0;
+        }
+
+        .control-panel {
+            display: flex;
+            align-items: center;
+            height: 20px;
+            flex: 1 0 100%;
+            margin-left: auto; /* เพิ่มบรรทัดนี้ */
+        }
+
+        .control-panel button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            font-size: 16px;
+            border: 1px solid black; /* เพิ่ม border */
+            background-color: white; /* สีพื้นหลัง */
+            color: black; /* สีข้อความ */
+            border-radius: 8px; /* เพิ่มขอบโค้ง */
+        }
+
+        .control-panel button.active {
+            border-color: black; /* สี border เมื่อ active */
+        }
+
+        /* CSS เพิ่มเติมสำหรับปุ่มสี */
+        #whiteButton {
+            background-color: #000;
+            color: #fff;
+        }
+
+        #blackButton {
+            background-color: #fff;
+            color: #000;
+        }
+
+        #yellowButton {
+            background-color: #000;
+            color: yellow;
+        }
+        @media (max-width: 2400px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                order: 2;
+                width: 100%;
+            }
+            .control-panel {
+                order: 1;
+                width: 100%;
+                height: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        
+
+        /* Hamburger Menu CSS */
+        .hamburger {
+            display: none;
+            flex: 1 0 100%;
+            justify-content: flex-end;
+        }
+
+        .hamburger-button {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .hamburger-icon {
+            width: 35px;
+            height: 5px;
+            background-color: #ffffff;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+        
+
+        .hamburger-icon:nth-child(1).active {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .hamburger-icon:nth-child(1).active + :nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-icon:nth-child(1).active + :nth-child(2) + :nth-child(3) {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+
+        .hamburger-menu {
+            position: absolute;
+            top: auto;
+            right: 0;
+            background-color: #121350;
+            width: 100%;
+            height: auto;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            margin-top: 50px;
+        }
+
+        .hamburger-menu.active {
+            display: flex;
+        }
+
+        .hamburger-menu a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;  
+            padding: 10px 0 10px 10px;
+            width: 100%;
+            
+        }
+
+        .hamburger-menu a:hover {
+            background-color: #0011a7;
+        }
+        @media (min-width: 601px) {
+            .hamburger-menu{
+                display: none!important;
+            }
+        }
+        @media (max-width: 600px) {
+            .menu {
+                display: none;
+            }
+
+            .hamburger-button {
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .hamburger {
+                order: 2;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+
+            }
+
+            .control-panel {
+                order: 1;
+                width: 100%;
+                height: 20px;
+                margin-bottom: 10px;
+            }
+            
+        }
