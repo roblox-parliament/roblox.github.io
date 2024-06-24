@@ -1,247 +1,434 @@
 
-        body {
-            font-family: "Bai Jamjuree", sans-serif;
-            margin: 0;
-            padding: 0;
-            transition: all 0.3s ease;
-            overflow-x: hidden;
-        }
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+}
 
-        header {
-            position: relative;
-            background: linear-gradient(to right, #FFD700, #FFA500);
-            border-top: 5px solid transparent;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding: 10px 20px 0; /* เปลี่ยน padding-bottom เป็น 0 */
-            transition: all 0.5s ease; /* เพิ่ม transition เพื่อให้ header เปลี่ยนแปลงด้วยความนุ่มนวล */
-        }
+header {
+    position: relative;
+    background: linear-gradient(to right, #FFD700, #FFA500);
+    border-top: 5px solid transparent;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px 0; /* เปลี่ยน padding-bottom เป็น 0 */
+    transition: all 0.5s ease; /* เพิ่ม transition เพื่อให้ header เปลี่ยนแปลงด้วยความนุ่มนวล */
+}
 
-        .logo {
-            position: absolute;
-            bottom: -20px; /* เลยขอบล่าง */
-            left: 20px;
-            width: 60px;
-            height: 60px;
-            background-image: url('path_to_logo_image');
-            background-size: cover;
-            background-position: center;
-        }
+.logo img{
+    z-index: 1001;
+    position: absolute;
+    bottom: -25px; /* เลยขอบล่าง */
+    left: 20px;
+    width: 60px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
 
-        nav {
-            flex: 1 0 100%;
-            margin-top: 10px;
-        }
+nav {
+    flex: 1 0 100%;
+    margin-top: 10px;
+}
 
-        .menu {
-            display: flex;
-            padding: 0;
-            margin: 0;
-            flex-wrap: wrap;
-        }
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    float: right;
+}
 
-        .menu-item {
-            position: relative;
-            margin-left: 20px;
-            list-style: none;
-        }
+.menu-item {
+    position: relative;
+    margin-left: 20px;
+    list-style: none;
+}
 
-        .menu-link {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-            padding: 10px;
-            display: block;
-        }
-        .menu-link:hover {
-            background-color: #000157; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
-        }
+.menu-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    transition: .1s;
+}
+.menu-link:hover {
+    background-color: #989898; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
 
 
-        .menu-item:hover .submenu {
-            display: block;
-        }
+.menu-item:hover .submenu {
+    display: block;
+}
 
-        .submenu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
 
-        .submenu li {
-            list-style: none;
-        }
+.submenu li {
+    list-style: none;
+    margin-left: -25px;
+    width: max-content;
+}
 
-        .submenu a {
-            text-decoration: none;
-            color: black;
-            padding: 10px 20px;
-            display: block;
-        }
+.submenu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px 10px 0;
+    display: block;
+}
 
-        .submenu a:hover {
-            background: #f0f0f0;
-        }
+.submenu a:hover {
+    background: #f0f0f0;
+}
 
-        .control-panel {
-            display: flex;
-            align-items: center;
-            height: 20px;
-            flex: 1 0 100%;
-            margin-left: auto; /* เพิ่มบรรทัดนี้ */
-        }
+.control-panel {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    flex: 1 0 100%;
+    margin-left: auto; /* เพิ่มบรรทัดนี้ */
+}
 
-        .control-panel button {
-            margin-left: 10px;
-            padding: 5px 10px;
-            font-size: 16px;
-            border: 1px solid black; /* เพิ่ม border */
-            background-color: white; /* สีพื้นหลัง */
-            color: black; /* สีข้อความ */
-            border-radius: 8px; /* เพิ่มขอบโค้ง */
-        }
+.control-panel button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid black; /* เพิ่ม border */
+    background-color: white; /* สีพื้นหลัง */
+    color: black; /* สีข้อความ */
+    border-radius: 8px; /* เพิ่มขอบโค้ง */
+}
 
-        .control-panel button.active {
-            border-color: black; /* สี border เมื่อ active */
-        }
+.control-panel button.active {
+    border-color: black; /* สี border เมื่อ active */
+}
 
-        /* CSS เพิ่มเติมสำหรับปุ่มสี */
-        #whiteButton {
-            background-color: #000;
-            color: #fff;
-        }
+/* CSS เพิ่มเติมสำหรับปุ่มสี */
+#whiteButton {
+    background-color: #121350;
+    color: #fff;
+}
 
-        #blackButton {
-            background-color: #fff;
-            color: #000;
-        }
+#blackButton {
+    background-color: #fff;
+    color: #000;
+}
 
-        #yellowButton {
-            background-color: #000;
-            color: yellow;
-        }
-        @media (max-width: 2400px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            nav {
-                order: 2;
-                width: 100%;
-            }
-            .control-panel {
-                order: 1;
-                width: 100%;
-                height: 20px;
-                margin-bottom: 10px;
-            }
-        }
-        
+#yellowButton {
+    background-color: #000;
+    color: yellow;
+}
+@media (max-width: 2400px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    nav {
+        order: 2;
+        width: 100%;
+    }
+    .control-panel {
+        order: 1;
+        width: 100%;
+        height: 20px;
+        margin-bottom: 10px;
+        float: right;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        left: 0;
+    }
+}
 
-        /* Hamburger Menu CSS */
-        .hamburger {
-            display: none;
-            flex: 1 0 100%;
-            justify-content: flex-end;
-        }
+@media (max-width: 1196px) {
+    .menu .menu-item a.menu-link{
+        font-size: 14px;
+        padding: 5px;
+    }
+    .submenu a {
+        font-size: 14px;
+        padding: 10px 20px 10px 0;
+    }
+    
+    .logo img {
+        bottom: -40px;
+    }
+}
 
-        .hamburger-button {
-            display: none;
-            cursor: pointer;
-            padding: 10px;
-            background-color: transparent;
-            border: none;
-            outline: none;
-        }
+@media (max-width: 1024px) {
+    .menu .menu-item a.menu-link{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .submenu a {
+        font-size: 12px;
+        padding: 10px 20px 10px 0;
+    }
+    
+    .logo img {
+        bottom: -40px;
+    }
+}
 
-        .hamburger-icon {
-            width: 35px;
-            height: 5px;
-            background-color: #ffffff;
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-        
+@media (max-width: 930px) {
+    .menu .menu-item a.menu-link{
+        font-size: 10px;
+        padding: 2px;
+    }
+    .submenu a {
+        font-size: 10px;
+        padding: 10px 20px 10px 0;
+    }
+    
+    .logo img {
+        bottom: -40px;
+    }
+}
 
-        .hamburger-icon:nth-child(1).active {
-            transform: translate(0, 11px) rotate(-45deg);
-        }
+@media (max-width: 780px) {
+    .menu .menu-item a.menu-link{
+        font-size: 10px;
+        padding: 2px;
+    }
+    .submenu a {
+        font-size: 10px;
+        padding: 10px 20px 10px 0;
+    }
+    
+    .logo img {
+        bottom: -40px;
+    }
+    
+    .menu-item {
+        margin-left: 10px;
+    }
+    header{
+        padding: 10px 10px 0 20px;
+    }
+}
 
-        .hamburger-icon:nth-child(1).active + :nth-child(2) {
-            opacity: 0;
-        }
+@media (max-width: 700px) {
+    header{
+        padding: 10px 10px 0 20px;
+    }
+    
+    .menu-item {
+        margin-left: 5px;
+    }
+}
 
-        .hamburger-icon:nth-child(1).active + :nth-child(2) + :nth-child(3) {
-            transform: translate(0, -11px) rotate(45deg);
-        }
 
-        .hamburger-menu {
-            position: absolute;
-            top: auto;
-            right: 0;
-            background-color: #121350;
-            width: 100%;
-            height: auto;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            margin-top: 50px;
-        }
+/* Hamburger Menu CSS */
+.hamburger {
+    display: none;
+    flex: 1 0 100%;
+    justify-content: flex-end;
+}
 
-        .hamburger-menu.active {
-            display: flex;
-        }
+.hamburger-button {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
 
-        .hamburger-menu a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;  
-            padding: 10px 0 10px 10px;
-            width: 100%;
-            
-        }
+.hamburger-icon {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
 
-        .hamburger-menu a:hover {
-            background-color: #0011a7;
-        }
-        @media (min-width: 601px) {
-            .hamburger-menu{
-                display: none!important;
-            }
-        }
-        @media (max-width: 600px) {
-            .menu {
-                display: none;
-            }
 
-            .hamburger-button {
-                display: inline-block;
-                cursor: pointer;
-            }
+.hamburger-icon:nth-child(1).active {
+    transform: translate(0, 11px) rotate(-45deg);
+}
 
-            .hamburger {
-                order: 2;
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 0;
+.hamburger-icon:nth-child(1).active + :nth-child(2) {
+    opacity: 0;
+}
 
-            }
+.hamburger-icon:nth-child(1).active + :nth-child(2) + :nth-child(3) {
+    transform: translate(0, -11px) rotate(45deg);
+}
 
-            .control-panel {
-                order: 1;
-                width: 100%;
-                height: 20px;
-                margin-bottom: 10px;
-            }
-            
-        }
+.hamburger-menu {
+    position: absolute;
+    top: auto;
+    right: 0;
+    background-color: #121350;
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    margin-top: 50px;
+    padding-top: 50px;
+    transition: .5s;
+}
+
+.hamburger-menu.active {
+    display: flex;
+}
+
+.hamburger-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;  
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    
+}
+
+.hamburger-menu a:hover {
+    background-color: #0011a7;
+}
+@media (min-width: 601px) {
+    .hamburger-menu{
+        display: none!important;
+    }
+}
+@media (max-width: 675px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        order: 2;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    .control-panel {
+        order: 1;
+        width: 100%;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    header {
+        height: 50px;
+    }
+    
+}
+@media (max-width: 360px) {
+    .control-panel {
+        display: none !important;
+    }
+    header {
+        height: 50px;
+    }
+}
+/* -------------------- SLIDER ---------------------- */
+
+
+.menuF {
+    transform: translateY(-40px);
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background: linear-gradient(to right, rgba(221, 229, 211, 1) 0%, rgba(223, 229, 215, 1) 51%, rgba(252, 255, 244, 1) 99%);
+    color: white;
+    padding: 20px;
+    height: 75px;
+    text-align: center;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+@media (min-width: 1200px) {
+    .box {
+        flex: 1 1 calc(100% / 5); /* แสดง 4 กล่องใน 1 แถว */
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+    .box {
+        flex: 1 1 calc(100% / 3); /* แสดง 2 กล่องใน 1 แถว */
+    }
+}
+
+@media (max-width: 799px) {
+    .box {
+        flex: 1 1 calc(100% / 2); /* แสดง 1 กล่องใน 1 แถว */
+    }
+}
+
+
+.image.ratio-1-1 {
+    padding-top: 30px;
+    float: left;
+}
+.image {
+    box-shadow: none;
+    position: initial;
+    width: 30%;
+    text-align: center;
+}
+.detail-title {
+    white-space: normal;
+    padding: 3px 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.detail .detail-title a {
+    color: #4863a0;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.detail .detail-row {
+    position: absolute;
+    width: 100%;
+    float: left;
+    padding: 3px 0px;
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .detail .detail-row a {
+        font-size: 20px;
+    }
+}
+.detail .detail-row a {
+    color: #000000;
+    font-size: 24px;
+    text-decoration: none;
+}
