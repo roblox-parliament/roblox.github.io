@@ -474,3 +474,10 @@ nav {
     background-color: transparent !important;
     background: transparent !important;
 }
+
+
+.wrapper {
+    background: url(https://www.coj.go.th/cms/u1/BG_Sub.jpg) no-repeat;
+    background-size: 100%;
+    z-index: -1001;
+}
