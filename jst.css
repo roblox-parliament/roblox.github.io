@@ -509,7 +509,7 @@ footer {
 }
 
 .footer-bottom {
-    background: linear-gradient(to right, #FFD700, #FFA500);
+    background-image: url(https://www.coj.go.th/th/file/get/file/2018082140d3a4993ac1c915250c28cf2fe6605d133239.jpg);
     padding: 10px;
     display: flex;
     justify-content: center;
