@@ -502,6 +502,10 @@ footer {
 
 .footer-top .logos {
     margin-bottom: 10px;
+    background: #fff;
+    padding: 9px 10px 7px 10px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .footer-top p {
