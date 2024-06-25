@@ -509,7 +509,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color: yellow;
+    background: linear-gradient(to right, #FFD700, #FFA500);
     padding: 10px;
     display: flex;
     justify-content: center;
