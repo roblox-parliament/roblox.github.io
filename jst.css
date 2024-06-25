@@ -486,9 +486,9 @@ nav {
     z-index: -1001;
 }
 
+
 footer {
     background-color: #f2f2f2;
-    padding: 20px;
     text-align: center;
 }
 
@@ -497,9 +497,10 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
-.footer-top .logo {
+.footer-top .logos {
     margin-bottom: 10px;
 }
 
