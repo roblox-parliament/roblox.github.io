@@ -496,7 +496,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     padding: 20px;
 }
 
