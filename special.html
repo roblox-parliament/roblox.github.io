@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html><head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+<style>
+  html{
+    width: 100%;
+  }
+  body{
+    font-family: "Sarabun", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  h1.title{
+    font-size: 24px;
+  }
+  .boxs{
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+  .box{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    flex: 25%;
+  }
+  @media (min-width: 0px) {
+    
+    .box {
+        flex: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .sub img{
+      display: none;
+    }
+    .box img{
+        display: none;
+        height: 0;
+        width: 0;
+    }
+    .sub .num{
+        display: none;
+    }
+    .sub h1{
+        padding-top: 5px;
+    }
+    .sub:last-child{
+        display: none;
+    }
+    .sub.sub-box{
+      display: ruby;
+    }
+}
+  @media (min-width: 240px) {
+    
+    .box {
+        flex: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .box img{
+        display: block;
+        height: 50px;
+        width: auto;
+        background: transparent;
+        border: 2px solid #fff;
+    }
+    .sub .num{
+        display: none;
+    }
+    .sub h1{
+        padding-top: 5px;
+    }
+    .sub:last-child{
+        display: none;
+    }
+    .sub.sub-box{
+      display: unset;
+    }
+}
+  @media (min-width: 300px) {
+    
+    .box {
+        flex: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .box img{
+        display: block;
+        height: 80px;
+        width: auto;
+        background: transparent;
+        border: 2px solid #fff;
+    }
+    .sub .num{
+        display: none;
+    }
+    .sub h1{
+        padding-top: 5px;
+    }
+    .sub:last-child{
+        display: none;
+    }
+  
+    .sub p{
+      padding-top: 20px;
+    }
+}
+
+@media (min-width: 860px) {
+    .box {
+        flex: 20%;
+        padding: 10px;
+        display: block;
+    }
+    .box img{
+        display: block;
+        height: 100px;
+        width: auto;
+        align-items: center;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        background: transparent;
+        border: 2px solid #fff;
+    }
+    .sub-bottom{
+      display: none;
+    }
+    .sub:last-child{
+        display: block;
+    }
+    .num{
+      display: block;
+    }
+  .num.chan,
+  .num.api,
+  .num.khm,
+  .num.nop{
+    display: block;
+  }
+}
+  .red{
+    background: #f00000;
+    color: #fff;
+  }
+  .blue-1{
+    background: #0000CD;
+    color: #fff;
+  }
+  .blue-2{
+    background: #101283;
+    color: #fff;
+  }
+  .blue-3{
+    background: #4061A6;
+    color: #fff;
+  }
+  .sub-box h1{
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  
+  .sub p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .num{
+    position: fixed;
+    display: block;
+    padding: 10px;
+    float: right;
+    font-weight: 500;
+    border-radius: 2px;
+    position: unset;
+  }
+  .num.chan{
+    background: #fff;
+    color: #f00000;
+  }
+  .num.api{
+    background: #fff;
+    color: #0000CD;
+  }
+  .num.khm{
+    background: #fff;
+    color: #101283;
+  }
+  .num.nop{
+    background: #fff;
+    color: #4061A6;
+  }
+  .progress{
+    width: 100%;
+    margin: 0 0 20px 0 ;
+    height: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  }
+  
+.progress-bar {
+    float: left;
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 20px;
+    color: #fff;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.gray{
+  background: #f5f5f5;
+}
+.bar{
+  margin: 0 10px 0 10px;
+}
+</style>
+</head>
+<body>
+    <h1 class="title"><center>ผลการเลือกตั้งนายกอบจ.ปทุมธานี</center></h1>
+    <div class="bar">
+      <div class="progress">
+        <div class="progress-bar red" role="progressbar" style="width:46.93%"></div>
+        <div class="progress-bar blue-1" role="progressbar" style="width:2.05%"></div>
+        <div class="progress-bar blue-2" role="progressbar" style="width:46.99%"></div>
+        <div class="progress-bar blue-3" role="progressbar" style="width:4.02%"></div>
+        <div class="progress-bar gray" role="progressbar" style="width:0%"></div>
+      </div>
+    </div>
+    <div class="boxs">
+        <div class="box red">
+            <center class="sub"><img src="https://i.ibb.co/MMN57R8/436197602-999794591505117-8636880963668771529-n-removebg-preview.png" alt=""></center>
+            <div class="sub sub-box">
+                <h1>ชาญ พวงเพ็ชร์</h1>
+                <p class="sub-bottom">145,836 คะแนนเสียง</p>
+                <div class="num num-1 chan">1</div>
+            </div>
+            <p class="sub">145,836 <small>คะแนนเสียง</small></p>
+        </div>
+        <div class="box blue-1">
+            <center class="sub"><img src="https://i.ibb.co/Pc168RD/image.png" alt=""></center>
+            <div class="sub sub-box">
+                <h1>อธิวัฒน์ สอนเนย</h1>
+                <p class="sub-bottom">6,378 คะแนนเสียง</p>
+                <div class="num num-1 api">2</div>
+            </div>
+            <p class="sub">6,378 <small>คะแนนเสียง</small></p>
+        </div>
+        <div class="box blue-2">
+            <center class="sub"><img src="https://i.ibb.co/d4mBmDh/441925636-986532796163176-6073454602050023085-n-removebg-preview.png" alt=""></center>
+            <div class="sub sub-box">
+                <h1>คำรณวิทย์ ธูปกระจ่าง</h1>
+                <p class="sub-bottom">146,023 คะแนนเสียง</p>
+                <div class="num num-1 khm">3</div>
+            </div>
+            <p class="sub">146,023 <small>คะแนนเสียง</small></p>
+        </div>
+        <div class="box blue-3">
+            <center class="sub"><img src="https://i.ibb.co/N3mKYHW/images-removebg-preview.png" alt=""></center>
+            <div class="sub sub-box">
+                <h1>นพดล ลัดดาแย้ม</h1>
+                <p class="sub-bottom">12,502 คะแนนเสียง</p>
+                <div class="num num-1 nop">4</div>
+            </div>
+            <p class="sub">12,502 <small>คะแนนเสียง</small></p>
+        </div>
+    </div>
+    <div class="none">
+      <h1>ไม่เลือกบุคคลใด</h1>
+    </div>
+
+
+</body></html>
