@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ถ่ายทอดสดการประชุมสภาผู้แทนราษฏร</title>
+    <link rel="icon" href="https://web.parliament.go.th/assets/portals/1/images/House_of_Representatives/parliament_logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: "Kanit", sans-serif; /* เพิ่ม font-family ตามที่ต้องการ */
+            background-color: #fcf6de; /* สีพื้นหลังของ body */
+        }
+        header {
+            background-color: #800000; /* สีพื้นหลังของ header */
+            padding: 10px; /* การเพิ่ม padding ใน header */
+            text-align: center; /* การจัดตำแหน่งข้อความใน header */
+            color: white; /* สีข้อความใน header */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header img, header h1 {
+            margin: 0;
+            vertical-align: middle;
+        }
+        header img {
+            width: 50px; /* กำหนดความกว้างของรูปภาพใน header */
+            height: auto; /* ให้ความสูงของรูปภาพปรับตามอัตราส่วน */
+        }
+        header h1 {
+            padding-left: 10px; /* เพิ่ม padding ด้านซ้ายของ h1 */
+        }
+        footer {
+            background-color: transparent; /* สีพื้นหลังของ footer เป็นโปร่งใส */
+            text-align: center; /* การจัดตำแหน่งข้อความใน footer */
+            padding: 10px; /* การเพิ่ม padding ใน footer */
+        }
+        #player-jlptljvv {
+            width: 100%;
+            margin: 50px 0 0 0;
+            height: 300px;
+            margin-left: auto; /* จัดตำแหน่งกึ่งกลางตามแนวนอน */
+            margin-right: auto; /* จัดตำแหน่งกึ่งกลางตามแนวนอน */
+            justify-content: center;
+            padding-left: 20px; /* เพิ่ม padding ด้านซ้ายของ #player-jlptljvv */
+            padding-right: 20px; /* เพิ่ม padding ด้านขวาของ #player-jlptljvv */
+        }
+        .mga{
+            justify-content: center;
+            margin-left: 5%; /* จัดตำแหน่งกึ่งกลางตามแนวนอน */
+            margin-right: 5%; /* จัดตำแหน่งกึ่งกลางตามแนวนอน */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://web.parliament.go.th/assets/portals/1/images/House_of_Representatives/parliament_logo.png" alt="โลโก้สภาผู้แทนราษฏร">
+        <h1>ถ่ายทอดสดการประชุมสภาผู้แทนราษฏร</h1>
+    </header>
+    <div class="mga">
+    	<div id="player-jlptljvv"></div>
+    </div>
+    <footer>
+        © 2024 - กลุ่มงานบริหารระบบเครือข่ายคอมพิวเตอร์ สำนักสารสนเทศ สำนักงานเลขาธิการสภาผู้แทนราษฏร
+        <br>
+        โทร 02-242-5900 ต่อ 5831
+    </footer>
+    <script type="module">
+        import flowplayer from "https://embed.wowza.com/fa2b3786-ca91-4994-98e1-19f845af682b/jlptljvv.js";
+        flowplayer("#player-jlptljvv", {});
+    </script>
+</body>
+</html>
