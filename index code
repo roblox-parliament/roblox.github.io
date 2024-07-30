@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta http-equiv="refresh" content="10">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Charm:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/Bn929ST/Seal-of-the-Office-of-the-Prime-Minister-of-Thailand-svg.png">
+    <title>Home</title>
+</head>
+<body  onclick="playAudio1()">
+
+<body onload="startTime()">
+    
+    <div class="MuiBox-root css-1ltj605 loader" id=""><span class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-z01bqi" role="progressbar" style="width: 100px; height: 100px;"><svg class="MuiCircularProgress-svg css-13o7eu2" viewBox="22 22 44 44"><circle class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-14891ef" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle></svg></span></div>
+  
+  <div class="intropage2f">
+        <div class="control-intropage2f">
+            <div class="box-slide2f">
+              <ul class="slideintro" style="margin-top: 50%;">
+                <li>
+                    <a>
+                        <center><h1 style="color:#ffac00"> ยินดีต้อนรับเข้าสู่ เว็บไซต์ รัฐสภาโรบล็อก</h1></center>
+                    </a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-intro">
+                <a href="#" class="btn btn-red">ลงนามถวายพระพร</a>
+                <a href="home.html" class="btn btn-red">เข้าสู่เว็บไซต์</a>
+                <a href="home.html" class="btn btn-red">Enter Site</a>
+                                                    
+            </div>
+        </div>
+    </div>
+    
+  
+  
+  <div id="txt" style="top:0; right:0;position:fixed;padding:16px 12px; z-index:999; background: #00000000; color: white;font-size: 24px;">00:00:00</div>
+</body>
+</html>
+
+<script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      let ms = today.getMilliseconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      ms = checkTime(ms);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+
+<!-- script -->
+
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".css-1ltj605");
+
+        loader.classList.add("css-1ltj605-hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild("loader");
+        })
+    })
+
+</script>
+<style>
+    /*  LOADER  */
+    .css-1ltj605 {
+        height: 100vh;
+        display: flex;
+              position: fixed;
+              inset: 0px;
+              background: rgb(255, 255, 255);
+              z-index: 99999;
+              -webkit-box-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              justify-content: center;
+              transition: opacity 0.75s, visibility 0.75s;
+          }
+    .css-1ltj605-hidden{
+        opacity: 0;
+        visibility: hidden;
+    }
+          
+    .css-nvmvi3 *, .css-nvmvi3 *::before, .css-nvmvi3 *::after {
+              box-sizing: inherit;
+          }
+          .css-z01bqi {
+              display: inline-block;
+              color: #ffac00;
+              animation: 1.4s linear 0s infinite normal none running animation-61bdi0;
+          }
+          .css-nvmvi3 *, .css-nvmvi3 *::before, .css-nvmvi3 *::after {
+              box-sizing: inherit;
+          }
+          @keyframes animation-61bdi0{
+          0% {
+              transform: rotate(0deg);
+          }
+          100% {
+              transform: rotate(360deg);
+          }
+            }
+          .css-13o7eu2 {
+              display: block;
+          }
+          .css-nvmvi3 *, .css-nvmvi3 *::before, .css-nvmvi3 *::after {
+              box-sizing: inherit;
+          }
+          .css-14891ef {
+              stroke: currentcolor;
+              stroke-dasharray: 80px, 200px;
+              stroke-dashoffset: 0;
+              animation: 1.4s ease-in-out 0s infinite normal none running animation-1p2h4ri;
+          }
+          
+          .css-nvmvi3 *, .css-nvmvi3 *::before, .css-nvmvi3 *::after {
+              box-sizing: inherit;
+          }
+          
+          @keyframes nimation-1p2h4ri{
+          0% {
+              stroke-dasharray: 1px, 200px;
+              stroke-dashoffset: 0;
+          }
+          50% {
+              stroke-dasharray: 100px, 200px;
+              stroke-dashoffset: -15px;
+          }
+          100% {
+              stroke-dasharray: 100px, 200px;
+              stroke-dashoffset: -125px;
+          }
+          }
+    
+    </style>
