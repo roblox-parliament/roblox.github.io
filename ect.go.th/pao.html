@@ -34,10 +34,23 @@
             color: #ff3232;
             font-weight: bold;
         }
+        #map {
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #map img {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
     <h1>ติดตามผลการเลือกตั้ง อบจ.</h1>
+    <div id="map">
+        <img id="mapImage" src="" alt="แผนที่จังหวัด">
+    </div>
     <label for="province">เลือกจังหวัด:</label>
     <select id="province" onchange="updateTable()" style=" height: 2rem; border: none; border-bottom: 2px solid #c60000; font-family: 'Bai Jamjuree';">
         <option value="เชียงใหม่">เชียงใหม่</option>
@@ -90,12 +103,15 @@
             const province = document.getElementById("province").value;
             const districts = districtsData[province] || [];
             const tbody = document.getElementById("districts");
+            const mapImage = document.getElementById("mapImage");
             tbody.innerHTML = "";
             districts.forEach((district, index) => {
                 const partyClass = district[1] === "เพื่อไทย" ? "class='ptp'" : "";
                 const row = `<tr><td>${index + 1}</td><td>${district[0]}</td><td ${partyClass}>${district[1]}</td></tr>`;
                 tbody.innerHTML += row;
             });
+            mapImage.src = `maps/${province}.svg`;
+            mapImage.alt = `แผนที่จังหวัด ${province}`;
         }
         document.addEventListener("DOMContentLoaded", updateTable);
     </script>
