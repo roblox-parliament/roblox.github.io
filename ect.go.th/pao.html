@@ -147,6 +147,8 @@
                 const row = `<tr><td>${index + 1}</td><td>${district[0]}</td><td class='${partyClass}'>${district[1]}</td></tr>`;
                 tbody.innerHTML += row;
             });
+            mapImage.src = `maps/${province}.svg`;
+            mapImage.alt = `แผนที่จังหวัด ${province}`;
         }
         document.addEventListener("DOMContentLoaded", updateTable);
     </script>
