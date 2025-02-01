@@ -29,6 +29,11 @@
         th {
             background-color: #f4f4f4;
         }
+        
+        .ptp {
+            color: #ff3232;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +92,8 @@
             const tbody = document.getElementById("districts");
             tbody.innerHTML = "";
             districts.forEach((district, index) => {
-                const row = `<tr><td>${index + 1}</td><td>${district[0]}</td><td>${district[1]}</td></tr>`;
+                const partyClass = district[1] === "เพื่อไทย" ? "class='ptp'" : "";
+                const row = `<tr><td>${index + 1}</td><td>${district[0]}</td><td ${partyClass}>${district[1]}</td></tr>`;
                 tbody.innerHTML += row;
             });
         }
